@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         primary: '#ffffff', // Example of a custom color
-        secondary: '#FFAD1F',
+        secondary: '#18181b',
         accent: {
           light: '#166534',
           DEFAULT: '#052e16', // Default value for 'accent'

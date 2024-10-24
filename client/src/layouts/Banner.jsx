@@ -3,11 +3,11 @@
 const Banner = () => {
     return (
         <div className="relative isolate px-6 pt-14 lg:px-8">
-            <img src="./images/idf2.jpg" alt="idf image" className="absolute inset-0 -z-10 w-full h-[100vh] object-cover bg-center opacity-95" />
+            <img src="./images/idf2.jpg" alt="idf image" className="absolute inset-0 -z-10 w-full h-[100vh] object-cover bg-center opacity-90 transition-opacity duration-700 ease-out" />
             <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
                 <div className="text-center">
                     <h1 className="text-balance text-5xl font-semibold tracking-tight text-primary sm:text-7xl">
-                        צבא הגנה לישראל
+                        האתר לעמותת היחידה המובחרת
                     </h1>
                     <p className="mt-8 text-pretty text-lg font-medium text-accent-light sm:text-xl/8">
                         העמותה הרשמית ליחידת הדובדבן בצה״ל

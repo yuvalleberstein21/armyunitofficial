@@ -1,4 +1,5 @@
 import './App.css'
+import CardGrid from './components/CardGrid'
 import Banner from './layouts/Banner'
 import Footer from './layouts/Footer'
 import Header from './layouts/Header'
@@ -14,9 +15,10 @@ function App() {
           <Banner />
         </section>
 
-        <div className='about'>
-          <div className='h-[100vh]'>asjkdjskajdsaiojr</div>
-        </div>
+        <section>
+          <CardGrid />
+        </section>
+
       </main>
       <footer>
         <Footer />
