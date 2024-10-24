@@ -7,12 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#FFFFFF', // Example of a custom color
+        primary: '#ffffff', // Example of a custom color
         secondary: '#FFAD1F',
         accent: {
-          light: '#FFEDD5',
-          DEFAULT: '#FF8800', // Default value for 'accent'
-          dark: '#C05621',
+          light: '#166534',
+          DEFAULT: '#052e16', // Default value for 'accent'
+          dark: '#052e16',
         },
       },
     },

@@ -21,7 +21,7 @@ const Header = () => {
             <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
-                        <span className="text-primary text-xl">ARMY.IL</span>
+                        <span className="text-primary text-xl bg-accent-light px-2 rounded-sm">תרומות</span>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -36,15 +36,13 @@ const Header = () => {
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12 text-primary">
                     {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="font-semibold leading-6 text-primary text-md">
+                        <a key={item.name} href={item.href} className="font-semibold leading-6 text-primary text-xl">
                             {item.name}
                         </a>
                     ))}
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" className="font-semibold leading-6 text-primary text-md">
-                        התחברות <span aria-hidden="true">&rarr;</span>
-                    </a>
+
                 </div>
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -82,7 +80,7 @@ const Header = () => {
                                     href="#"
                                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
-                                    התחברות
+                                    תרומות
                                 </a>
                             </div>
                         </div>

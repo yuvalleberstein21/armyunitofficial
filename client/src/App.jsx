@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './layouts/Banner'
+import Footer from './layouts/Footer'
 import Header from './layouts/Header'
 
 function App() {
@@ -14,9 +15,13 @@ function App() {
         </section>
 
         <div className='about'>
-          <div>asjkdjskajdsaiojr</div>
+          <div className='h-[100vh]'>asjkdjskajdsaiojr</div>
         </div>
       </main>
+      <footer>
+        <Footer />
+      </footer>
+
     </>
   )
 }
