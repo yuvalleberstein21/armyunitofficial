@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 // import { Dialog, DialogPanel } from '@headlessui/react'
 import { AiOutlineBars } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
@@ -14,12 +14,40 @@ const navigation = [
 
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+
+        const handleScroll = () => {
+            console.log("ScrollY:", window.scrollY);
+            if (window.scrollY > 50) {
+
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        console.log("Adding scroll event listener");
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+
+    }, []);
+
+
+
     return (
-        <header className='fixed inset-x-0 top-0 z-50 transition-colors duration-500 ease-in-out'>
-            <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+        <header
+            className={`fixed inset-x-0 top-0 z-50 bg-scroll ${scrolled ? 'bg-black shadow-lg' : 'bg-transparent'}`}>
+
+            <nav className="flex items-center justify-between p-6 lg:px-8">
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
-                        <span className="text-primary font-semibold text-xl bg-accent-light px-6 py-1 rounded-sm">תרומות</span>
+                        <span className="text-primary font-semibold text-xl bg-accent-light px-6 py-1">תרומות</span>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -29,7 +57,7 @@ const Header = () => {
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
                     >
                         <span className="sr-only">Open main menu</span>
-                        <AiOutlineBars aria-hidden="true" className="h-6 w-6 text-primary" />
+                        <AiOutlineBars aria-hidden="true" className="h-8 w-8 text-primary" />
                     </button>
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12 text-primary">

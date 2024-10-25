@@ -2,7 +2,7 @@
 
 const Banner = () => {
     return (
-        <div className="relative isolate px-6 pt-14 lg:px-8">
+        <div className="relative isolate px-6 pt-14 lg:px-8 min-h-screen">
             {/* Background Image */}
             <img
                 src="./images/idf2.jpg"
@@ -32,6 +32,7 @@ const Banner = () => {
                             על היחידה <span aria-hidden="true">→</span>
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>
