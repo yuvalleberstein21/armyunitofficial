@@ -11,19 +11,16 @@ function App() {
 
       <Header />
       <main>
-        <section className='min-h-[100vh]'>
+        <section>
           <Banner />
         </section>
-
         <section>
           <CardGrid />
         </section>
-
-      </main>
+      </main >
       <footer>
         <Footer />
       </footer>
-
     </>
   )
 }

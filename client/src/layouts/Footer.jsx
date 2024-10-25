@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const texts = [
-
     "משפט ראשון",
     "משפט שני",
     "משפט שלישי",
@@ -11,22 +10,36 @@ const texts = [
 ];
 
 const Footer = () => {
-    const [index, setIndex] = useState(0);
-    const changeInterval = 5000; // Change text every 3 seconds
-
+    const [currentTextIndex, setCurrentTextIndex] = useState(0);
+    const [displayText, setDisplayText] = useState("");
+    const [charIndex, setCharIndex] = useState(0);
     useEffect(() => {
-        const interval = setInterval(() => {
-            setIndex((prevIndex) => (prevIndex + 1) % texts.length);
-        }, changeInterval);
+        if (charIndex < texts[currentTextIndex].length) {
+            const typingInterval = setInterval(() => {
+                setDisplayText((prev) => prev + texts[currentTextIndex][charIndex]);
+                setCharIndex((prev) => prev + 1);
+            }, 100); // Typing speed
 
-        return () => clearInterval(interval); // Clean up the interval on component unmount
-    }, []);
+            return () => clearInterval(typingInterval);
+        } else {
+            const pauseInterval = setTimeout(() => {
+                // Move to the next text after 3 seconds of pausing
+                setDisplayText("");
+                setCharIndex(0);
+                setCurrentTextIndex((prev) => (prev + 1) % texts.length);
+            }, 3000);
+
+            return () => clearTimeout(pauseInterval);
+        }
+    }, [charIndex, currentTextIndex]);
+
+
 
     return (
         <div className="footer" dir="rtl">
-            <span className="static-text">חדשות ואירועים:</span>
-            <div className="typing-wrapper">
-                <span className="typing-text">{texts[index]}</span>
+            <span className="static-text w-1/3 lg:px-8 text-gray-300">חדשות ואירועים:</span>
+            <div className="typing-wrapper w-2/3">
+                <span className="typing-text">{displayText}</span>
             </div>
         </div>
     );

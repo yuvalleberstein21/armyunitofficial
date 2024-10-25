@@ -13,6 +13,9 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+section {
+  height: 100% !important;
+}
 
 .footer {
   position: fixed;
@@ -30,48 +33,21 @@ body {
   z-index: 100;
   gap: 10px;
 }
-.static-text {
-  padding-right: 2rem;
-  font-size: 16px;
-  font-weight: bold;
-  white-space: nowrap;
-}
 
 .typing-wrapper {
-  overflow: hidden;
-  width: 100%;
-}
-
-.typing-text {
   display: inline-block;
-  font-size: 16px;
-  white-space: nowrap;
   overflow: hidden;
-  animation: typing 8s steps(50, end) infinite, blink 0.75s step-end infinite;
+  white-space: nowrap;
+  animation: blink-caret 0.75s step-end infinite;
 }
 
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  70% {
-    width: 100%;
-  }
-  85% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  }
-}
-
-@keyframes blink {
+@keyframes blink-caret {
   from,
   to {
     border-color: transparent;
   }
   50% {
-    border-color: white;
+    border-color: black;
   }
 }
 
