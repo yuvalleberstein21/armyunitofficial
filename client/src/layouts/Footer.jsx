@@ -36,9 +36,9 @@ const Footer = () => {
 
 
     return (
-        <div className="footer" dir="rtl">
-            <span className="static-text w-1/3 lg:px-8 text-gray-300">חדשות ואירועים:</span>
-            <div className="typing-wrapper w-2/3">
+        <div className="footer flex lg:flex-row " dir="rtl">
+            <span className="static-text text-gray-300 lg:text-right">חדשות ואירועים:</span>
+            <div className="typing-wrapper w-2/4 lg:w-3/4 lg:text-right">
                 <span className="typing-text">{displayText}</span>
             </div>
         </div>

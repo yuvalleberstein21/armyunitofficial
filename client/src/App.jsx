@@ -1,10 +1,11 @@
 import './App.css'
-import CardGrid from './components/CardGrid'
 import ImageBanner from './components/ImageBanner'
 import Banner from './layouts/Banner'
 import Footer from './layouts/Footer'
 import Header from './layouts/Header'
+import Activities from './pages/Activities'
 import Contact from './pages/Contact'
+import Organizations from './pages/Organizations'
 
 function App() {
 
@@ -16,13 +17,13 @@ function App() {
           <Banner />
         </section>
         <section>
-          <CardGrid />
+          <Organizations />
         </section>
         <div className='py-5'>
           <ImageBanner />
         </div>
         <div>
-          <CardGrid />
+          <Activities />
         </div>
       </main >
       <footer>
