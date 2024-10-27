@@ -19,7 +19,7 @@ const Banner = () => {
                         האתר לעמותת היחידה המובחרת
                     </h1>
                     <p className="mt-8 text-pretty text-lg font-medium text-primary sm:text-xl/8">
-                        העמותה הרשמית ליחידת הדובדבן בצה״ל
+                        העמותה הרשמית ליחידה המיוחדת
                     </p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <a

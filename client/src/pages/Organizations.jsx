@@ -9,7 +9,7 @@ const cardData = [
     },
     {
         image: "https://michaelarch.wordpress.com/wp-content/uploads/2017/05/dsc00318.jpg",
-        title: "המצודה",
+        title: "כותרת",
         description: "lorem ipsum dolor sit amet, consectetur adip lorem, sed do eiusmod tempor incididunt ut labore"
     },
     {

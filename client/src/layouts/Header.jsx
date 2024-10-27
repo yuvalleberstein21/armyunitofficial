@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react"
-// import { Dialog, DialogPanel } from '@headlessui/react'
 import { AiOutlineBars } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 
 
-
 const navigation = [
-    { name: 'מוצרים', href: '#' },
-    { name: 'קצת עלינו', href: '#' },
+    { name: 'התורמים שלנו', href: '#' },
+    { name: 'על היחידה', href: '#' },
     { name: 'תרומות', href: '#' },
-    { name: 'מבצעים', href: '#' },
+    { name: 'מהות היחידה', href: '#' },
 ]
 
 const Header = () => {
@@ -42,12 +40,15 @@ const Header = () => {
 
     return (
         <header
-            className={`fixed inset-x-0 top-0 z-50 bg-scroll ${scrolled ? 'bg-black shadow-lg' : 'bg-transparent'}`}
+            className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${scrolled ? 'bg-zinc-300' : 'bg-transparent'}`}
         >
             <nav className="flex items-center justify-between p-6 lg:px-8">
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="text-primary font-semibold text-xl bg-accent-light px-6 py-1">תרומות</span>
+                    </a>
+                    <a href="#" className="-m-1.5 p-1.5 px-4">
+                        <span className="text-primary font-semibold text-xl bg-accent-light px-3 py-1">ENG</span>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
