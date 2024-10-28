@@ -2,7 +2,7 @@
 
 const Banner = () => {
     return (
-        <div className="relative isolate px-6 pt-14 lg:px-8 min-h-screen">
+        <div className="relative isolate px-6 pt-12 lg:pt-12 md:pt-48 lg:px-8 min-h-screen">
             {/* Background Image */}
             <img
                 src="./images/idf2.jpg"
@@ -18,17 +18,17 @@ const Banner = () => {
                     <h1 className="text-balance text-5xl font-semibold tracking-tight text-primary sm:text-7xl">
                         האתר לעמותת היחידה המובחרת
                     </h1>
-                    <p className="mt-8 text-pretty text-lg font-medium text-primary sm:text-xl/8">
+                    <p className="mt-8 text-pretty text-lg md:text-2xl font-medium text-primary sm:text-xl/8">
                         העמותה הרשמית ליחידה המיוחדת
                     </p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <a
                             href="#"
-                            className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            className="text-md md:text-lg rounded-md bg-primary px-3.5 py-2.5 font-semibold text-black shadow-sm "
                         >
                             תרומות
                         </a>
-                        <a href="#" className="text-sm font-semibold leading-6 bg-accent-light px-3.5 py-2.5 rounded-md text-primary">
+                        <a href="#" className="text-md md:text-lg font-semibold leading-6 bg-accent-light px-3.5 py-2.5 rounded-md text-primary">
                             על היחידה <span aria-hidden="true">→</span>
                         </a>
                     </div>
