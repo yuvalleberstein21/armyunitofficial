@@ -6,6 +6,7 @@ import Header from './layouts/Header'
 import Activities from './pages/Activities'
 import Contact from './pages/Contact'
 import Organizations from './pages/Organizations'
+import './helpers/i18n';
 
 function App() {
 
@@ -33,7 +34,6 @@ function App() {
           <span className="w-full flex justify-center items-center font-semibold text-secondary py-2">למען עמותת לוחמי הקומנדו של צבא הגנה לישראל 💚</span>
         </div>
       </footer>
-
     </>
   )
 }

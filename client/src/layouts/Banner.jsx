@@ -1,6 +1,9 @@
-
+import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
+    const { t } = useTranslation();
+
+
     return (
         <div className="relative isolate px-6 pt-12 lg:pt-12 md:pt-48 lg:px-8 min-h-screen">
             {/* Background Image */}
@@ -16,7 +19,7 @@ const Banner = () => {
             <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
                 <div className="text-center">
                     <h1 className="text-balance text-5xl font-semibold tracking-tight text-primary sm:text-7xl">
-                        האתר לעמותת היחידה המובחרת
+                        {t("the website for the special unit army")}
                     </h1>
                     <p className="mt-8 text-pretty text-lg md:text-2xl font-medium text-primary sm:text-xl/8">
                         העמותה הרשמית ליחידה המיוחדת

@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
+import { useTranslation } from 'react-i18next';
 import { AiOutlineBars } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
-
 
 const navigation = [
     { name: 'התורמים שלנו', href: '#' },
@@ -12,50 +12,40 @@ const navigation = [
 
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-    const [scrolled, setScrolled] = useState(false);
-
-    useEffect(() => {
-
-        const handleScroll = () => {
-            console.log("ScrollY:", window.scrollY);
-            if (window.scrollY > 50) {
-
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
-
-        console.log("Adding scroll event listener");
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-
-    }, []);
+    const [selectedLanguage, setSelectedLanguage] = useState('he');
 
 
+    const { t, i18n } = useTranslation();
+
+
+    const switchLanguage = (lang) => {
+        i18n.changeLanguage(lang);
+        setSelectedLanguage(lang)
+    };
+    console.log(selectedLanguage)
 
     return (
         <header
-            className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${scrolled ? 'bg-zinc-300' : 'bg-transparent'}`}
+            className='fixed inset-x-0 top-0 z-50 transition-colors duration-300'
         >
             <nav className="flex items-center justify-between p-5 lg:p-2 lg:px-8">
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
-                        <span className="text-primary font-semibold text-xl bg-accent-light px-6 py-1">תרומות</span>
+                        <span className="text-primary font-semibold text-xl bg-accent-light px-6 py-1">{t('donait')}</span>
                     </a>
-                    <a href="#" className="-m-1.5 p-1.5 px-4">
-                        <span className="text-primary font-semibold text-xl bg-accent-light px-3 py-1">ENG</span>
-                    </a>
+                    {
+                        selectedLanguage === 'he' ? (
+                            <a href="#" className="-m-1.5 p-1.5 px-4">
+                                <span className="text-primary font-semibold text-xl bg-accent-light px-3 py-1" onClick={() => switchLanguage('en')}>ENG</span>
+                            </a>
+                        ) : (
+                            <a href="#" className="-m-1.5 p-1.5 px-4">
+                                <span className="text-primary font-semibold text-xl bg-accent-light px-3 py-1" onClick={() => switchLanguage('he')}>עברית</span>
+                            </a>
+                        )
+                    }
                 </div>
-
-                {/* Empty div to take up space and push the icon button to the right */}
                 <div className="flex-1"></div>
-
-                {/* Move the icon button to the right */}
                 <div className="hidden lg:flex lg:justify-end">
                     <button
                         type="button"
@@ -64,7 +54,7 @@ const Header = () => {
                     >
                         <span className="sr-only">Open main menu</span>
                         <div className="bg-accent-light text-primary flex justify-center items-center text-xl font-semibold gap-2 px-2 py-1">
-                            <span>תפריט</span>
+                            <span>{t('menu')}</span>
                             <AiOutlineBars aria-hidden="true" className="h-6 w-6 text-primary" />
                         </div>
                     </button>
@@ -79,7 +69,6 @@ const Header = () => {
                     <span className="sr-only">Open main menu</span>
                     <AiOutlineBars aria-hidden="true" className="h-8 w-8 lg:h-6 lg:w-6 text-emerald-600" />
                 </button>
-
             </nav>
 
             {/* Mobile Menu */}
