@@ -11,7 +11,7 @@ const CardGrid = ({ image, title, description }) => {
                 <h2 className="text-2xl font-bold mb-3 text-center text-secondary">{title}</h2>
                 <p className="text-gray-700 mb-4 leading-relaxed">{description}</p>
                 <div className="text-center">
-                    <button className="px-5 py-2 border border-accent-light text-accent-light rounded-md hover:bg-accent-light hover:text-white transition-colors duration-300">
+                    <button className="px-5 py-2 border border-accent-light text-accent-light  hover:bg-accent-light hover:text-white transition-colors duration-300">
                         מידע נוסף
                     </button>
                 </div>
