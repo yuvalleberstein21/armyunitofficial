@@ -7,6 +7,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden; /* Only hide horizontal scrolling */
   background-color: #f4f4f5;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Heebo', sans-serif;
@@ -61,4 +62,47 @@ header {
   background: none; /* Ensure there's no background color */
   padding: 0;
   margin: 0;
+}
+
+/* type writer */
+.typewriter {
+  overflow: hidden;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+/* Enable typewriter effect only on large screens and above */
+@media (min-width: 768px) {
+  /* Tailwind’s lg breakpoint */
+  .typewriter {
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+}
+
+/* The typing effect keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* ARROW ANIMATION */
+.arrow {
+  padding: 10px;
+  animation: bounce 0.6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 10px, 0);
+  }
 }

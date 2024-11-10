@@ -1,8 +1,4 @@
 
-
-
-
-
 const CardGrid = ({ image, title, description }) => {
     return (
         <div className="shadow-lg rounded-lg mx-2 lg:mx-0 md:mx-0 overflow-hidden transition-transform duration-300 hover:scale-105">

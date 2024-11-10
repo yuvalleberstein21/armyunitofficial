@@ -10,7 +10,7 @@ export default {
         primary: '#ffffff', // Example of a custom color
         secondary: '#18181b',
         accent: {
-          light: '#166534',
+          light: '#eab308',
           DEFAULT: '#052e16', // Default value for 'accent'
           dark: '#052e16',
         },

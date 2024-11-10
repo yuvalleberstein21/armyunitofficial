@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useTranslation } from 'react-i18next';
 import { AiOutlineBars } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
+import Logo from '/images/logo-nobg.png';
 
 const navigation = [
     { name: 'התורמים שלנו', href: '#' },
@@ -31,7 +32,7 @@ const Header = () => {
             <nav className="flex items-center justify-between p-5 lg:p-2 lg:px-8">
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
-                        <span className="text-primary font-semibold text-xl bg-accent-light px-6 py-1">{t('donait')}</span>
+                        <img src={Logo} alt="LOGO" className="px-3  w-24" />
                     </a>
                     {
                         selectedLanguage === 'he' ? (
@@ -67,7 +68,7 @@ const Header = () => {
                     className="lg:hidden -m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
                 >
                     <span className="sr-only">Open main menu</span>
-                    <AiOutlineBars aria-hidden="true" className="h-8 w-8 lg:h-6 lg:w-6 text-emerald-600" />
+                    <AiOutlineBars aria-hidden="true" className="h-8 w-8 lg:h-6 lg:w-6 text-accent-light" />
                 </button>
             </nav>
 
@@ -81,7 +82,7 @@ const Header = () => {
                 >
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <span className="text-xl">ARMY.IL</span>
+                            <img src={Logo} alt="logo" className="w-28" />
                         </a>
                         <button
                             type="button"

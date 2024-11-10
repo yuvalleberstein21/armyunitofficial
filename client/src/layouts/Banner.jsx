@@ -1,7 +1,9 @@
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
+import { FaArrowDown } from "react-icons/fa";
+
 
 const Banner = () => {
-    const { t } = useTranslation();
+    // const { t } = useTranslation();
 
 
     return (
@@ -18,22 +20,18 @@ const Banner = () => {
 
             <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
                 <div className="text-center">
-                    <h1 className="text-balance text-5xl font-semibold tracking-tight text-primary sm:text-7xl">
-                        {t("the website for the special unit army")}
+                    <h1 className="text-5xl font-semibold  text-primary sm:text-7xl">
+                        יחידת פרא
+                        <br />
+                        הקומנדו של הגולן
                     </h1>
-                    <p className="mt-8 text-pretty text-lg md:text-2xl font-medium text-primary sm:text-xl/8">
-                        העמותה הרשמית ליחידה המיוחדת
+                    <p className="mt-8 text-pretty text-lg md:text-2xl font-medium text-primary sm:text-xl/8 typewriter" dir="rtl">
+                        עמותת פרא בהגנה על תושבי הגולן מול איומי הטרור
                     </p>
-                    <div className="mt-10 flex items-center justify-center gap-x-6">
-                        <a
-                            href="#"
-                            className="text-md md:text-lg rounded-md bg-primary px-3.5 py-2.5 font-semibold text-black shadow-sm "
-                        >
-                            תרומות
-                        </a>
-                        <a href="#" className="text-md md:text-lg font-semibold leading-6 bg-accent-light px-3.5 py-2.5 rounded-md text-primary">
-                            על היחידה <span aria-hidden="true">→</span>
-                        </a>
+                    <div className="mt-32 flex items-center justify-center">
+                        <div className="arrow bg-primary rounded-full cursor-pointer opacity-85">
+                            <FaArrowDown size={20} />
+                        </div>
                     </div>
 
                 </div>
