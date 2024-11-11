@@ -1,12 +1,13 @@
 import './App.css'
-import ImageBanner from './components/ImageBanner'
 import Banner from './layouts/Banner'
 import Footer from './layouts/Footer'
 import Header from './layouts/Header'
 import Activities from './pages/Activities'
-import Contact from './pages/Contact'
 import Organizations from './pages/Organizations'
 import './helpers/i18n';
+import SaveHouse from './components/saveHouse'
+import AboutUs from './pages/AboutUs'
+import Amuta from './pages/Amuta'
 
 function App() {
 
@@ -21,17 +22,20 @@ function App() {
           <Organizations />
         </section>
         <div className='py-5'>
-          <ImageBanner />
+          <SaveHouse />
         </div>
+        <div className='py-5'>
+          <AboutUs />
+        </div>
+        <Amuta />
         <div>
           <Activities />
         </div>
-      </main >
+      </main>
       <footer>
-        <Footer />
-        <Contact />
-        <div className="h-20 items-center" dir='rtl'>
-          <span className="w-full flex justify-center items-center font-semibold text-secondary py-2">למען עמותת לוחמי הקומנדו של צבא הגנה לישראל 💚</span>
+        {/* <Footer /> */}
+        <div className="p-5 items-center bg-accent-light" dir='rtl'>
+          <span className="w-full flex justify-center items-center font-semibold text-secondary py-2">למען עמותת לוחמי יחידת הפרא של צבא הגנה לישראל 💚</span>
         </div>
       </footer>
     </>

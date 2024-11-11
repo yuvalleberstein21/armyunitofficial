@@ -2,19 +2,24 @@ import CardGrid from "../components/CardGrid";
 
 const cardData = [
     {
-        image: "https://adrenalin-israel.co.il/wp-content/uploads/%D7%A6%D7%94%D7%9C.jpg",
-        title: "הארגון",
-        description: "lorem ipsum dolor sit amet, consectetur adip lorem, sed do eiusmod tempor incididunt ut labore"
+        title: "פיתוח קשרי קהילה בין תושבי הגולן ליחידה",
+        description: "פיתוח קשרי קהילה בין תושבי הגולן ליחידה ייזום תוכניות לשיח וגיבוש עם תושבי הגולן במטרה לבנות קשרים משמעותיים ולחזק את שיתוף הפעולה, באמצעות אירועים משותפים ופעילויות חברתיות מגוונות."
     },
     {
-        image: "https://gonegev.co.il/wp-content/uploads/2017/06/%D7%9E%D7%A6%D7%95%D7%93%D7%AA-%D7%99%D7%95%D7%90%D7%91.jpg",
-        title: "כותרת",
-        description: "lorem ipsum dolor sit amet, consectetur adip lorem, sed do eiusmod tempor incididunt ut labore"
+        title: "הקמת מתקני אימונים ייעודיים ליחידה",
+        description: "השקעה בהקמת מתקני אימונים מתקדמים המיועדים לצרכים הייחודיים של היחידה, במטרה לשפר את יכולות הלוחמים ולהבטיח הכנה מיטבית לכל תרחיש."
     },
     {
-        image: "./images/idflogo.jpg",
-        title: "כותרת",
-        description: "lorem ipsum dolor sit amet, consectetur adip lorem, sed do eiusmod tempor incididunt ut labore"
+        title: "גיוס חיילים נוספים ליחידה",
+        description: "גיוס חיילים חדשים במטרה לחזק את כוחות היחידה ולהתאים את כוח האדם לאיומים הקיימים, כדי להבטיח את המוכנות המבצעית והיכולת להגיב במהירות וביעילות לכל תרחיש."
+    },
+    {
+        title: "השלמת תהליכי הצטיידות ברכש שאינו נכלל בסל הצבאי",
+        description: "רכישת ציוד נוסף שאינו כלול בסל הציוד הצבאי, כדי להבטיח שלוחמי היחידה מצוידים במיטב הכלים והטכנולוגיות הנדרשות."
+    },
+    {
+        title: "תמיכה וסיוע לאנשי היחידה ומשפחותיהם",
+        description: "הענקת תמיכה נפשית וכלכלית לחיילי היחידה ומתן סיוע למשפחות החיילים במצבי קיצון כמו מלחמה במטרה להבטיח שהן מקבלות את התמיכה הנדרשת, כולל תמיכה נפשית, כלכלית ולוגיסטית."
     },
 
 ];
