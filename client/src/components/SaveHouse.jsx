@@ -21,14 +21,14 @@ const SaveHouse = () => {
                             className="w-full h-48 lg:h-80 max-w-sm lg:max-w-md shadow-lg rounded-lg border-4 border-primary"
                         />
                     </div>
-                    <div className="text-gray-700 leading-relaxed" dir='rtl'>
+                    <div className="text-gray-800 font-normal leading-relaxed" dir='rtl'>
                         <h2 className="text-3xl font-semibold text-accent-dark mb-4">
                             כוח מקומי מיומן שמגן על ביתו ומשפחתו
                         </h2>
-                        <p className="text-lg">
+                        <p className="text-xl">
                             יחידת פרא היא יחידת מילואים המורכבת מלוחמים מקומיים מהגולן מתוך עקרון הגנה על הבית ותפיסת ההגנה של לוחם מקומי עם מחויבות ויכולות יוצאות דופן.
                         </p>
-                        <p className="text-lg mt-4">
+                        <p className="text-xl mt-4">
                             היחידה הוקמה במטרה להוות כוח לוחם איכותי, זמין, מהיר ונחוש המייצר חיץ אפקטיבי בין האויב לבין ישובי הגולן מתוך צורך מיידי להגן על התושבים מפני איומי הטרור המתעצמים בגזרה.
                         </p>
                     </div>
