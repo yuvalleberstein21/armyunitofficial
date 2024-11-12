@@ -2,7 +2,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 const Amuta = () => {
     return (
-        <div className="relative h-[550px] mt-10 mx-auto" dir="rtl">
+        <div className="relative h-[570px] lg:h-[450px] md:h-[450px] mt-0 lg:mt-10 md:mt-10 mx-auto" dir="rtl">
             {/* <!-- Background Image --> */}
             <img
                 src="./images/idf3.webp"
