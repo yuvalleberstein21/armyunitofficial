@@ -3,12 +3,12 @@ import SectionTitle from "../components/SectionTitle"
 
 const AboutUs = () => {
     return (
-
         <div className="container mx-auto p-8" dir="rtl">
             <SectionTitle title={"יחידת הפרא"} />
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-10" >
 
                 {/* <!-- First Section --> */}
+
                 <div className="order-2 lg:order-1 p-2">
                     <h2 className="text-3xl font-bold text-accent-dark mb-4">אז מי אנחנו ?</h2>
                     <p className="text-gray-800 text-xl font-light leading-relaxed">
@@ -18,7 +18,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 flex justify-center items-center">
-                    <div className="bg-gradient-to-br from-blue-200 to-blue-500 rounded-lg p-6 transform rotate-2 hover:rotate-0 transition-transform duration-300 shadow-lg">
+                    <div className="bg-gradient-to-br from-gray-400 to-accent-dark rounded-lg p-6 transform rotate-2 hover:rotate-0 transition-transform duration-300 shadow-lg">
                         <img src="../images/idf2.jpg" alt="Unit Image" className="w-full h-full object-cover rounded-lg" />
                     </div>
                 </div>
@@ -33,7 +33,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className="order-3 lg:order-4 flex justify-center items-center">
-                    <div className="bg-gradient-to-br from-blue-200 to-blue-500 rounded-lg p-6 transform -rotate-2 hover:rotate-0 transition-transform duration-300 shadow-lg">
+                    <div className="bg-gradient-to-br from-gray-300 to-gray-700 rounded-lg p-6 transform -rotate-2 hover:rotate-0 transition-transform duration-300 shadow-lg">
                         <img src="../images/logo.jpg" alt="Coordinated Forces" className="w-full h-full object-cover rounded-lg" />
                     </div>
                 </div>

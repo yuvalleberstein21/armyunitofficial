@@ -9,11 +9,6 @@ const CardGrid = ({ title, description }) => {
                 <p className="text-gray-100 mb-4 leading-relaxed text-lg drop-shadow-md">
                     {description}
                 </p>
-                <div className="mt-auto">
-                    <button className="px-6 py-3 rounded-full border-2 border-white text-white font-semibold bg-opacity-20 hover:bg-white hover:text-blue-500 transition-colors duration-300">
-                        מידע נוסף
-                    </button>
-                </div>
             </div>
         </div>
     )

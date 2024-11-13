@@ -1,17 +1,17 @@
 import SectionTitle from './SectionTitle';
 import GolanMap from '/images/golan-map.webp';
 
+
 const SaveHouse = () => {
+
     return (
         <div className="container mx-auto w-full h-full relative py-5">
             {/* <!-- Title Section --> */}
             <SectionTitle title={"שומרים על הבית"} />
             {/* <!-- Slanted Grid Section --> */}
             <div className="relative mt-10 bg-primary shadow-sm rounded-lg overflow-hidden">
-                {/* <!-- Slant Background --> */}
                 <div className="absolute inset-0 bg-accent-light -skew-y-6 transform origin-top-left"></div>
 
-                {/* <!-- Content inside the Slanted Background --> */}
                 <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-6 p-8 lg:p-12">
                     {/* <!-- Image Column (Left) --> */}
                     <div className="flex justify-center items-center">

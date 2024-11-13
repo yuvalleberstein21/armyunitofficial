@@ -1,6 +1,7 @@
 // import CardGrid from "../components/CardGrid";
 import Logo from '/images/logo-nobg.png';
 
+
 const Organizations = () => {
     return (
         <div className="container mx-auto p-4 pt-10 lg:pt-16" dir="rtl">

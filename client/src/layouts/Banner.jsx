@@ -28,11 +28,11 @@ const Banner = () => {
                     <p className="mt-8 text-pretty text-lg md:text-2xl font-medium text-primary sm:text-xl/8 typewriter" dir="rtl">
                         עמותת פרא בהגנה על תושבי הגולן מול איומי הטרור
                     </p>
-                    <div className="mt-32 flex items-center justify-center">
+                    <a href="#NorthernSecurity" className="mt-32 flex items-center justify-center">
                         <div className="arrow bg-primary rounded-full cursor-pointer opacity-85">
                             <FaArrowDown size={20} />
                         </div>
-                    </div>
+                    </a>
 
                 </div>
             </div>

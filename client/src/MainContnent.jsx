@@ -5,25 +5,31 @@ import AboutUs from './pages/AboutUs';
 import Amuta from './pages/Amuta';
 import Activities from './pages/Activities';
 
+
+
+
 function MainContent() {
+
     return (
         <main>
-            <section>
+            <section id="home">
                 <Banner />
             </section>
-            <section>
+            <section id='NorthernSecurity'>
                 <Organizations />
             </section>
-            <div className="py-5">
+            <section className="py-5" id='SaveOurHouse'>
                 <SaveHouse />
-            </div>
-            <div className="py-5">
+            </section>
+            <section className="py-5" id='AboutUs'>
                 <AboutUs />
-            </div>
-            <Amuta />
-            <div>
+            </section>
+            <section className='py-5' id='association'>
+                <Amuta />
+            </section>
+            <section className='py-5' id='activities'>
                 <Activities />
-            </div>
+            </section>
         </main>
     );
 }
