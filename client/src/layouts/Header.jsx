@@ -26,21 +26,21 @@ const Header = () => {
 
     return (
         <header
-            className='fixed inset-x-0 top-0 z-50 transition-colors duration-300'
+            className='fixed inset-x-0 top-0 z-50'
         >
-            <nav className="flex items-center justify-between p-5 lg:p-2 lg:px-8 md:p-8">
+            <nav className="flex items-center justify-between p-5 lg:p-2 lg:px-8 md:p-8 bg-white shadow-lg">
                 <div className="flex lg:flex-1">
                     <a href="#home" className="-m-1.5 p-1.5">
                         <img src={Logo} alt="LOGO" className="px-3 w-24 md:w-32" />
                     </a>
                     {
                         selectedLanguage === 'he' ? (
-                            <a href="#" className="-m-1.5 p-1.5 px-4 py-2 md:py-3">
-                                <span className="text-primary font-semibold text-lg md:text-2xl bg-accent-light px-3 py-1" onClick={() => switchLanguage('en')}>ENG</span>
+                            <a href="#" className="-m-1.5 p-1.5 px-4 py-2 md:py-3 lg:py-4">
+                                <span className="text-primary font-semibold text-lg lg:text-lg md:text-2xl bg-accent-light px-3 py-1" onClick={() => switchLanguage('en')}>ENG</span>
                             </a>
                         ) : (
-                            <a href="#" className="-m-1.5 p-1.5 px-4 py-2 md:py-3">
-                                <span className="text-primary font-semibold text-lg md:text-2xl bg-accent-light px-3 py-1" onClick={() => switchLanguage('he')}>עברית</span>
+                            <a href="#" className="-m-1.5 p-1.5 px-4 py-2 md:py-3 lg:py-4">
+                                <span className="text-primary font-semibold text-lg lg:text-lg md:text-2xl bg-accent-light px-3 py-1" onClick={() => switchLanguage('he')}>עברית</span>
                             </a>
                         )
                     }
@@ -55,7 +55,7 @@ const Header = () => {
                         <span className="sr-only">Open main menu</span>
                         <div className="bg-accent-light text-primary flex justify-center items-center text-xl font-semibold gap-2 px-2 py-1">
                             <span>{t('menu')}</span>
-                            <AiOutlineBars aria-hidden="true" className="h-6 w-6 md:h-8 md:w-8 text-primary" />
+                            <AiOutlineBars aria-hidden="true" className="h-6 w-6 md:h-8 md:w-8 lg:w-6 lg:h-6 text-primary" />
                         </div>
                     </button>
                 </div>

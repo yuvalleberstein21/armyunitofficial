@@ -21,23 +21,6 @@ section {
   height: 100% !important;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #222;
-  color: white;
-  padding: 1px;
-  border-top: 1px solid rgb(205, 205, 205);
-  border-bottom: 1px solid rgb(205, 205, 205);
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  z-index: 100;
-  gap: 10px;
-}
-
 .typing-wrapper {
   display: inline-block;
   overflow: hidden;
@@ -107,5 +90,20 @@ header {
   }
   to {
     transform: translate3d(0, 10px, 0);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .homePageBottom {
+    bottom: -8rem;
+  }
+  .text-banner {
+    font-size: 2rem;
+  }
+  .second_textBanner {
+    font-size: 1rem;
+  }
+  .organization {
+    margin-top: 6rem !important;
   }
 }

@@ -5,7 +5,7 @@ import GolanMap from '/images/golan-map.webp';
 const SaveHouse = () => {
 
     return (
-        <div className="container mx-auto w-full h-full relative py-5">
+        <div className="container mx-auto w-full h-full relative py-8">
             {/* <!-- Title Section --> */}
             <SectionTitle title={"שומרים על הבית"} />
             {/* <!-- Slanted Grid Section --> */}
@@ -28,7 +28,7 @@ const SaveHouse = () => {
                         <p className="text-xl">
                             יחידת פרא היא יחידת מילואים המורכבת מלוחמים מקומיים מהגולן מתוך עקרון הגנה על הבית ותפיסת ההגנה של לוחם מקומי עם מחויבות ויכולות יוצאות דופן.
                         </p>
-                        <p className="text-xl mt-4">
+                        <p className="text-xl">
                             היחידה הוקמה במטרה להוות כוח לוחם איכותי, זמין, מהיר ונחוש המייצר חיץ אפקטיבי בין האויב לבין ישובי הגולן מתוך צורך מיידי להגן על התושבים מפני איומי הטרור המתעצמים בגזרה.
                         </p>
                     </div>

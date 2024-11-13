@@ -7,7 +7,6 @@ import Activities from './pages/Activities';
 
 
 
-
 function MainContent() {
 
     return (

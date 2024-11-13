@@ -12,7 +12,7 @@ export default {
         accent: {
           light: 'rgb(222, 190, 93)',
           DEFAULT: '#0c0a09',
-          dark: '#0a0a0a',
+          dark: '#1f2937',
         },
       },
     },

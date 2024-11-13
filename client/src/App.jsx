@@ -7,6 +7,7 @@ import MainContent from './MainContnent';
 function App() {
   return (
     <>
+
       <Header />
       <MainContent />
       <footer>
@@ -16,6 +17,7 @@ function App() {
           </span>
         </div>
       </footer>
+
     </>
   )
 }

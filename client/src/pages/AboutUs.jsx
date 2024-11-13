@@ -9,9 +9,9 @@ const AboutUs = () => {
 
                 {/* <!-- First Section --> */}
 
-                <div className="order-2 lg:order-1 p-2">
-                    <h2 className="text-3xl font-bold text-accent-dark mb-4">אז מי אנחנו ?</h2>
-                    <p className="text-gray-800 text-xl font-light leading-relaxed">
+                <div className="order-2 lg:order-1 p-2 md:py-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-accent-dark mb-4">אז מי אנחנו ?</h2>
+                    <p className="text-accent-dark text-xl font-light leading-relaxed">
                         היחידה מורכבת מלוחמים מקומיים תושבי הגולן, בעלי רקע קרבי משמעותי יוצאי היחידות הכי מיוחדות בצה"ל,
                         המכירים היטב את השטח, את מאפייני האזור ואת התרבות המקומית. הלוחמים בעלי עצמאות מחשבתית, יוזמה ומחויבות עמוקה לביתם, קהילתם ולרמת הגולן כולה.
                     </p>
@@ -24,9 +24,9 @@ const AboutUs = () => {
                 </div>
 
                 {/* <!-- Second Section --> */}
-                <div className="order-4 lg:order-3 p-2">
-                    <h2 className="text-3xl font-bold text-accent-dark mb-4">מובילים את הכוח הלוחם ברמת הגולן</h2>
-                    <p className="text-gray-800 text-xl font-light leading-relaxed">
+                <div className="order-4 lg:order-3 p-2 md:py-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-accent-dark mb-4">מובילים את הכוח הלוחם ברמת הגולן</h2>
+                    <p className="text-accent-dark text-xl font-light leading-relaxed">
                         היחידה מחזיקה ביכולת לתאם ולשתף פעולה עם כלל הגורמים בגזרה – יחידות צה"ל, חטיבות, אוגדות, וכן המועצות המקומיות, היישובים וכיתות הכוננות –
                         ובכך יוצרת תגובה מתואמת בין הכוחות השונים, תיאום זה תורם רבות לביטחון תושבי הגולן ומבטיח רמת מוכנות גבוהה של כלל הכוחות הפועלים בשטח.
                     </p>
