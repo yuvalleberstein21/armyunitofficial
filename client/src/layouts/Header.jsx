@@ -9,7 +9,7 @@ const navigation = [
     { name: 'ביטחון הצפון', href: '#NorthernSecurity' },
     { name: 'שומרים על הבית', href: '#SaveOurHouse' },
     { name: 'על היחידה', href: '#AboutUs' },
-    { name: 'עמותת פרא', href: '#association' },
+    { name: 'עמותת פרא', href: '#foundation' },
     { name: 'פעולות העומתה', href: '#activities' },
 ]
 
@@ -25,9 +25,7 @@ const Header = () => {
     };
 
     return (
-        <header
-            className='fixed inset-x-0 top-0 z-50'
-        >
+        <header className='fixed inset-x-0 top-0 z-50'>
             <nav className="flex items-center justify-between p-5 lg:p-2 lg:px-8 md:p-8 bg-white shadow-lg">
                 <div className="flex lg:flex-1">
                     <a href="#home" className="-m-1.5 p-1.5">
@@ -36,11 +34,15 @@ const Header = () => {
                     {
                         selectedLanguage === 'he' ? (
                             <a href="#" className="-m-1.5 p-1.5 px-4 py-2 md:py-3 lg:py-4">
-                                <span className="text-primary font-semibold text-lg lg:text-lg md:text-2xl bg-accent-light px-3 py-1" onClick={() => switchLanguage('en')}>ENG</span>
+                                <span
+                                    className="text-primary font-semibold text-lg lg:text-lg md:text-2xl bg-accent-light px-3 py-1"
+                                    onClick={() => switchLanguage('en')}>ENG</span>
                             </a>
                         ) : (
                             <a href="#" className="-m-1.5 p-1.5 px-4 py-2 md:py-3 lg:py-4">
-                                <span className="text-primary font-semibold text-lg lg:text-lg md:text-2xl bg-accent-light px-3 py-1" onClick={() => switchLanguage('he')}>עברית</span>
+                                <span
+                                    className="text-primary font-semibold text-lg lg:text-lg md:text-2xl bg-accent-light px-3 py-1"
+                                    onClick={() => switchLanguage('he')}>עברית</span>
                             </a>
                         )
                     }

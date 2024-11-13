@@ -1,8 +1,9 @@
-// import CardGrid from "../components/CardGrid";
+import { useTranslation } from 'react-i18next';
 import Logo from '/images/logo-nobg.png';
 
 
 const Organizations = () => {
+    const { t } = useTranslation();
     return (
         <div className="container mx-auto p-4 pt-10 mt-10 lg:pt-16 organization" dir="rtl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:p-8 md:p-4 items-center">
@@ -13,10 +14,10 @@ const Organizations = () => {
                         <img src={Logo} alt="Logo" className="w-1/2 h-32 opacity-90" />
                     </div>
                     <p className="text-accent-dark text-xl font-light leading-relaxed px-4 py-1 lg:pl-12 lg:pr-6">
-                        כשקמנו לבוקר של ה-7 באוקטובר, כל מה שהכרנו נשבר באחת. תחושת הביטחון שהייתה חלק מחיינו התפוגגה. המלחמה בצפון מזכירה לנו שמה שקרה בדרום עלול להתרחש גם כאן ותושבי רמת הגולן עומדים בפני סכנה מוחשית.
+                        {t('waking up on that day, everything we knew shattered instantly. The sense of security we used to have vanished. The security situation in Northern Israel is reminding us that what happened in the south could happen here too, putting the residents of the Golan Heights at significant risk.')}
                     </p>
                     <p className="text-accent-dark text-xl font-light leading-relaxed mt-4 px-4 py-1 lg:pl-12 lg:pr-6">
-                        אסור לנו להמתין עד שהמציאות תכה שוב! בעזרת התמיכה שלכם, נוכל להעניק ללוחמי היחידה את הכוח להגן על בתיהם ומשפחותיהם ולהכין אותם לכל תרחיש אפשרי.
+                        {t('we cannot wait until that reality strikes again! With your support, we can provide the unit’s fighters with everything necessary to protect their homes and families, preparing them for any possible scenario.')}
                     </p>
                 </div>
 

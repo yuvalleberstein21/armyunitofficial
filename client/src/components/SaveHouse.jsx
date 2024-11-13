@@ -1,13 +1,15 @@
+import { useTranslation } from 'react-i18next';
 import SectionTitle from './SectionTitle';
 import GolanMap from '/images/golan-map.webp';
 
 
 const SaveHouse = () => {
+    const { t } = useTranslation();
 
     return (
-        <div className="container mx-auto w-full h-full relative py-8">
+        <div className="container mx-auto w-full h-full relative py-8 lg:px-8">
             {/* <!-- Title Section --> */}
-            <SectionTitle title={"שומרים על הבית"} />
+            <SectionTitle title={t('taking charge of our home')} />
             {/* <!-- Slanted Grid Section --> */}
             <div className="relative mt-10 bg-primary shadow-sm rounded-lg overflow-hidden">
                 <div className="absolute inset-0 bg-accent-light -skew-y-6 transform origin-top-left"></div>
@@ -23,7 +25,7 @@ const SaveHouse = () => {
                     </div>
                     <div className="text-gray-800 font-normal leading-relaxed" dir='rtl'>
                         <h2 className="text-3xl font-semibold text-accent-dark mb-4">
-                            כוח מקומי מיומן שמגן על ביתו ומשפחתו
+                            {t("local force defending our homes and families")}
                         </h2>
                         <p className="text-xl">
                             יחידת פרא היא יחידת מילואים המורכבת מלוחמים מקומיים מהגולן מתוך עקרון הגנה על הבית ותפיסת ההגנה של לוחם מקומי עם מחויבות ויכולות יוצאות דופן.
