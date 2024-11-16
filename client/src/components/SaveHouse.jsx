@@ -14,7 +14,7 @@ const SaveHouse = () => {
 
         <div
             className={`container mx-auto w-full h-full relative py-6 lg:px-8`}
-            dir={isRtl ? 'rtl' : 'ltr'}
+            dir={isRtl ? 'ltr' : 'rtl'}
         >
             {/* <!-- Title Section --> */}
 

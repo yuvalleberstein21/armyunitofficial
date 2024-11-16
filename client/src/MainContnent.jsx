@@ -17,13 +17,13 @@ function MainContent() {
             <section id='NorthernSecurity'>
                 <Organizations />
             </section>
-            <section className="py-5" id='SaveOurHouse'>
+            <section className="py-8" id='SaveOurHouse'>
                 <SaveHouse />
             </section>
-            <section className="py-1" id='AboutUs'>
+            <section className="mt-0 lg:mt-8 md:mt-0" id='AboutUs'>
                 <AboutUs />
             </section>
-            <section id='foundation'>
+            <section id='foundation' className='py-10'>
                 <Amuta />
             </section>
             <section className='py-5' id='activities'>
