@@ -22,7 +22,7 @@ const Banner = () => {
                 <div className="absolute inset-x-0 bottom-0 z-10 bg-accent-light opacity-100 lg:opacity-90 mx-0 py-2 lg:mx-16 md:mx-16 lg:py-5 md:py-5 homePageBottom">
                     <div className="w-full flex items-center">
                         <div className="w-full px-8 lg:w-3/4 md:w-3/4" dir="rtl">
-                            <h1 className="text-3xl lg:text-5xl md:text-5xl font-bold text-gray-800 py-5">עמותת פרא</h1>
+                            <h1 className="text-3xl lg:text-5xl md:text-5xl font-bold text-gray-800 py-5">{t('pereh association')}</h1>
                             <h2 dir="rtl"
                                 className="text-gray-800 pb-5 font-normal leading-relaxed text-base max-w-2xl lg:max-w-xl lg:text-justify md:text-justify homePageBottomText">
                                 הוקמה בשנת 2000 ע"י מר אורי הירשמן, אביו של סרן דורון הירשמן ז"ל, בוגר היחידה. העמותה הוקמה מתוך הרצון לאחד, לסייע ולתמוך בבוגרי

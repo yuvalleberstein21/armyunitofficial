@@ -15,5 +15,9 @@ i18n.use(initReactI18next).init({
     },
 });
 
+export const getLanguage = () => {
+    return i18n.language;
+}
+
 
 export default i18n;

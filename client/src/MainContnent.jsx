@@ -20,10 +20,10 @@ function MainContent() {
             <section className="py-5" id='SaveOurHouse'>
                 <SaveHouse />
             </section>
-            <section className="py-5" id='AboutUs'>
+            <section className="py-1" id='AboutUs'>
                 <AboutUs />
             </section>
-            <section className='py-5' id='foundation'>
+            <section id='foundation'>
                 <Amuta />
             </section>
             <section className='py-5' id='activities'>

@@ -1,19 +1,24 @@
+import { useTranslation } from "react-i18next";
 import SectionTitle from "../components/SectionTitle"
+import { getLanguage } from "../helpers/i18n";
 
 
 const AboutUs = () => {
+    const { t } = useTranslation();
+    const lang = getLanguage();
+    const isRtl = lang === 'he';
+
     return (
-        <div className="container mx-auto p-8" dir="rtl">
-            <SectionTitle title={"יחידת הפרא"} />
+        <div className={"container mx-auto p-5"} dir={isRtl ? 'rtl' : 'ltr'}>
+            <SectionTitle title={t('meet the pereh unit')} />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-10" >
 
                 {/* <!-- First Section --> */}
 
                 <div className="order-2 lg:order-1 p-2 md:py-10">
-                    <h2 className="text-3xl md:text-4xl font-bold text-accent-dark mb-4">אז מי אנחנו ?</h2>
-                    <p className="text-accent-dark text-xl font-light leading-relaxed">
-                        היחידה מורכבת מלוחמים מקומיים תושבי הגולן, בעלי רקע קרבי משמעותי יוצאי היחידות הכי מיוחדות בצה"ל,
-                        המכירים היטב את השטח, את מאפייני האזור ואת התרבות המקומית. הלוחמים בעלי עצמאות מחשבתית, יוזמה ומחויבות עמוקה לביתם, קהילתם ולרמת הגולן כולה.
+                    <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold text-accent-light mb-4">{t('who we are')}</h2>
+                    <p className="text-gray-700 text-lg font-light leading-relaxed">
+                        {t('composed of Golan Heights locals with significant combat backgrounds, including veterans of Israel’s most elite units, Pereh’s fighters possess deep knowledge of the terrain, the region’s characteristics, and local culture. Pereh’s warriors were selected based on their relevant experience, independent thinking, proactivity, and profound dedication to their home, community, and the Golan as a whole.')}
                     </p>
                 </div>
 
@@ -25,10 +30,9 @@ const AboutUs = () => {
 
                 {/* <!-- Second Section --> */}
                 <div className="order-4 lg:order-3 p-2 md:py-10">
-                    <h2 className="text-3xl md:text-4xl font-bold text-accent-dark mb-4">מובילים את הכוח הלוחם ברמת הגולן</h2>
-                    <p className="text-accent-dark text-xl font-light leading-relaxed">
-                        היחידה מחזיקה ביכולת לתאם ולשתף פעולה עם כלל הגורמים בגזרה – יחידות צה"ל, חטיבות, אוגדות, וכן המועצות המקומיות, היישובים וכיתות הכוננות –
-                        ובכך יוצרת תגובה מתואמת בין הכוחות השונים, תיאום זה תורם רבות לביטחון תושבי הגולן ומבטיח רמת מוכנות גבוהה של כלל הכוחות הפועלים בשטח.
+                    <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold text-accent-light mb-4">{t('leading the fighting force in the golan heights')}</h2>
+                    <p className="text-gray-700 text-lg font-light leading-relaxed">
+                        {t('the unit possesses the ability to coordinate and collaborate with all relevant entities in the area – other IDF units, brigades, divisions, as well as local councils, communities, and emergency response teams. The coordinated response between various forces significantly enhances the security of Golan residents and ensures a high level of readiness for all operating forces.')}
                     </p>
                 </div>
 
