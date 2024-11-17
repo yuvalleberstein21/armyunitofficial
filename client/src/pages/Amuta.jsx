@@ -10,7 +10,7 @@ const Amuta = () => {
         <div className="relative h-[570px] lg:h-[450px] md:h-[450px] mt-0 lg:mt-14 md:mt-10 mx-auto" dir="rtl">
             {/* <!-- Background Image --> */}
             <img
-                src="./images/idf3.webp"
+                src="./images/idf9.jpg"
                 alt="IDF Commando Image"
                 className="object-cover w-full h-full bg-center bg-no-repeat opacity-80"
             />

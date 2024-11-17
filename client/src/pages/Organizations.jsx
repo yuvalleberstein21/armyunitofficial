@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import Logo from '/images/logo-nobg.png';
 import { getLanguage } from '../helpers/i18n';
+import SectionTitle from '../components/SectionTitle';
 
 
 const Organizations = () => {
@@ -9,11 +10,12 @@ const Organizations = () => {
     const isRtl = lang === 'he';
     return (
         <div className="container mx-auto p-4 pt-10 mt-10 lg:pt-16 organization" dir={isRtl ? 'rtl' : 'ltr'}>
+            <SectionTitle title={"איך הכל התחיל"} />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:p-8 md:p-4 items-center">
 
                 {/* Text and Logo Column */}
                 <div className="space-y-6">
-                    <div className="flex justify-center lg:justify-start md:justify-start items-center">
+                    <div className="flex justify-center lg:justify-start md:justify-start items-center hidden md:block lg:block">
                         <img src={Logo} alt="Logo" className="w-1/2 h-32 opacity-90" />
                     </div>
                     <p className="text-accent-dark text-lg font-light leading-relaxed px-1 py-1 lg:pl-12 lg:pr-6 break-words">

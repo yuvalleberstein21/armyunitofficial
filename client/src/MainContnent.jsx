@@ -17,10 +17,10 @@ function MainContent() {
             <section id='NorthernSecurity'>
                 <Organizations />
             </section>
-            <section className="py-8" id='SaveOurHouse'>
+            <section id='SaveOurHouse'>
                 <SaveHouse />
             </section>
-            <section className="mt-0 lg:mt-8 md:mt-0" id='AboutUs'>
+            <section id='AboutUs'>
                 <AboutUs />
             </section>
             <section id='foundation' className='py-10'>

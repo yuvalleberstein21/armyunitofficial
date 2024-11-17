@@ -1,4 +1,5 @@
 import CardGrid from "../components/CardGrid";
+import SectionTitle from "../components/SectionTitle";
 
 const cardData = [
     {
@@ -21,12 +22,17 @@ const cardData = [
         title: "תמיכה וסיוע לאנשי היחידה ומשפחותיהם",
         description: "הענקת תמיכה נפשית וכלכלית לחיילי היחידה ומתן סיוע למשפחות החיילים במצבי קיצון כמו מלחמה במטרה להבטיח שהן מקבלות את התמיכה הנדרשת, כולל תמיכה נפשית, כלכלית ולוגיסטית."
     },
+    {
+        title: "קידום תפיסת ההגנה של ״הלוחם המקומי״",
+        description: "חיזוק התפיסה של ״הלוחם המקומי״ כמרכיב מרכזי במענה על האיומים באזור הגולן בפרט ומדינת ישראל ככלל, באמצעות הכשרה והדרכה שמדגישות את היתרון של הלוחם המכיר את השטח, את התושבים ואת האתגרים הייחודיים של כל איזור בו הוא פועל. "
+    },
 
 ];
 
 const Activities = () => {
     return (
         <div className="container mx-auto md:p-5 p-4 pt-10 lg:pt-16 md:pt-8">
+            <SectionTitle title="פעילות העמותה" />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-6 lg:p-8">
                 {cardData.map((card, index) => (
                     <CardGrid

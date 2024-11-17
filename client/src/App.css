@@ -97,7 +97,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-height: 568px) and (max-width: 360px) {
   .homePageBottom {
     bottom: -8rem;
   }

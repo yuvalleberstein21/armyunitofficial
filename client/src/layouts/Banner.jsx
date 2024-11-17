@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-
 import Logo from '/images/logo-nobg.png';
+import ImageBanner from '/images/idf4.jpg';
 
 const Banner = () => {
     const { t } = useTranslation();
@@ -10,9 +10,9 @@ const Banner = () => {
             <div className="relative isolate min-h-screen">
                 {/* Background Image */}
                 <img
-                    src="./images/bannerImage1.jpeg"
+                    src={ImageBanner}
                     alt="idf image"
-                    className="absolute inset-0 -z-10 w-full h-full object-cover bg-center opacity-80 transition-opacity duration-700 ease-out"
+                    className="absolute inset-0 -z-10 w-full h-full object-cover bg-center opacity-90 transition-opacity duration-700 ease-out"
                 />
 
                 {/* Dark Overlay */}
@@ -25,8 +25,7 @@ const Banner = () => {
                             <h1 className="text-3xl lg:text-5xl md:text-5xl font-bold text-gray-800 py-5">{t('pereh association')}</h1>
                             <h2 dir="rtl"
                                 className="text-gray-800 pb-5 font-normal leading-relaxed text-base max-w-2xl lg:max-w-xl lg:text-justify md:text-justify homePageBottomText">
-                                הוקמה בשנת 2000 ע"י מר אורי הירשמן, אביו של סרן דורון הירשמן ז"ל, בוגר היחידה. העמותה הוקמה מתוך הרצון לאחד, לסייע ולתמוך בבוגרי
-                                היחידה, חייליה ומפקדיה בסדיר ובקבע, ותמיכה במשפחות חללי היחידה והנצחתם.
+                                עמותת פרא פועלת לתמיכה כלכלית, תדמיתית ומבצעית ביחידת פרא, במטרה לחזק את עצמאותה ולשפר את יכולותיה להגן על תושבי רמת הגולן. בזכות התרומה שלכם, נוכל להמשיך ולחזק את היחידה ולהבטיח את בטחון תושבי הגולן. הצטרפו אלינו, וקחו חלק בהגנה על תושבי רמת הגולן ובשמירה על ביטחון תושביו.
                             </h2>
                         </div>
                         <div className="w-1/4 hidden lg:block md:block">
