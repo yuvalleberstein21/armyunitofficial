@@ -24,7 +24,7 @@ const AboutUs = () => {
 
                 <div className="order-1 lg:order-2 flex justify-center items-center p-2 lg:p-10 md:p-10">
                     <div className="bg-gradient-to-br from-gray-400 to-accent-dark rounded-lg p-4 transform rotate-2 hover:rotate-0 transition-transform duration-300 shadow-lg">
-                        <img src="../images/idf2.jpg" alt="Unit Image" className="w-full h-full object-cover rounded-lg" />
+                        <img src="../images/idf2.webp" alt="Unit Image" className="w-full h-full object-cover rounded-lg" />
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ const AboutUs = () => {
 
                 <div className="order-3 lg:order-4 flex justify-center items-center p-2 lg:p-10 md:p-10">
                     <div className="bg-gradient-to-br from-gray-300 to-gray-700 rounded-lg p-4 transform -rotate-2 hover:rotate-0 transition-transform duration-300 shadow-lg">
-                        <img src="../images/idf4.jpg" alt="Coordinated Forces" className="w-full h-full object-cover rounded-lg" />
+                        <img src="../images/idf4.webp" alt="Coordinated Forces" className="w-full h-full object-cover rounded-lg " />
                     </div>
                 </div>
             </div>

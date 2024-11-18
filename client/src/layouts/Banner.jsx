@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Logo from '/images/logo-nobg.png';
-import ImageBanner from '/images/idf4.jpg';
+import ImageBanner from '/images/idf7.webp';
 
 const Banner = () => {
     const { t } = useTranslation();
@@ -12,7 +12,7 @@ const Banner = () => {
                 <img
                     src={ImageBanner}
                     alt="idf image"
-                    className="absolute inset-0 -z-10 w-full h-full object-cover bg-center opacity-90 transition-opacity duration-700 ease-out"
+                    className="absolute inset-0 -z-10 w-full h-full object-cover bg-center opacity-80 "
                 />
 
                 {/* Dark Overlay */}

@@ -26,7 +26,7 @@ function MainContent() {
             <section id='foundation' className='py-10'>
                 <Amuta />
             </section>
-            <section className='py-5' id='activities'>
+            <section id='activities'>
                 <Activities />
             </section>
         </main>
