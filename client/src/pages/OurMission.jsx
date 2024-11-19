@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import GolanMap from '/images/map2.jpeg';
+import GolanMap from '/images/IRAN MILITIONS.jpg';
 import { getLanguage } from '../helpers/i18n';
 import SectionTitle from '../components/SectionTitle';
 

@@ -15,8 +15,6 @@ const HowItStart = () => {
                 <SectionTitle title={"איך הכל התחיל"} />
             </div>
 
-
-
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:p-8 md:p-4 items-center">
 
                 {/* Text and Logo Column */}
@@ -46,9 +44,6 @@ const HowItStart = () => {
                 </div>
             </div>
         </div>
-
-
-
     )
 }
 

@@ -1,9 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import Logo from '/images/logo-nobg.png';
 import ImageBanner from '/images/idf7.webp';
+import { getLanguage } from '../helpers/i18n';
 
 const Banner = () => {
     const { t } = useTranslation();
+    const lang = getLanguage();
+    const isRtl = lang === 'he';
 
     return (
         <>
@@ -21,11 +24,11 @@ const Banner = () => {
                 {/* Title and Description at the bottom */}
                 <div className="absolute inset-x-0 bottom-0 z-10 bg-accent-light opacity-100 lg:opacity-90 mx-0 mt-4 lg:mx-16 md:mx-16 lg:py-5 md:py-5 homePageBottom">
                     <div className="w-full flex items-center">
-                        <div className="w-full px-8 lg:w-3/4 md:w-4/5" dir="rtl">
+                        <div className="w-full px-8 lg:w-3/4 md:w-4/5" dir={isRtl ? 'rtl' : 'ltr'}>
                             <h1 className="text-3xl lg:text-5xl md:text-5xl font-bold text-gray-800 py-3">{t('pereh association')}</h1>
-                            <h2 dir="rtl"
+                            <h2
                                 className="text-gray-800 pb-5 font-normal leading-relaxed text-base lg:text-base max-w-2xl md:text-lg md:max-w-2xl lg:max-w-xl lg:text-justify md:text-justify homePageBottomText">
-                                עמותת פרא פועלת לתמיכה כלכלית, תדמיתית ומבצעית ביחידת פרא, במטרה לחזק את עצמאותה ולשפר את יכולותיה להגן על תושבי רמת הגולן. בזכות התרומה שלכם, נוכל להמשיך ולחזק את היחידה ולהבטיח את בטחון תושבי הגולן. הצטרפו אלינו, וקחו חלק בהגנה על תושבי רמת הגולן ובשמירה על ביטחון תושביו.
+                                {t('pereh Association works to provide financial, reputational, and operational support to the Pereh Unit, with the goal of strengthening its independence and enhancing its capabilities to protect the residents of the Golan Heights. With your donation, we can continue to strengthen the unit and ensure the safety of Golan residents. Join us and take part in protecting the Golan Heights and ensuring the security of its residents.')}
                             </h2>
                         </div>
                         <div className="w-1/5 hidden lg:block md:block">
@@ -42,8 +45,8 @@ const Banner = () => {
                             <br />
                             {t('commando unit')}
                         </h1>
-                        <p className="mt-8 px-3 text-pretty text-lg md:text-2xl font-medium text-primary sm:text-xl/8 typewriter second_textBanner" dir="rtl">
-                            {t(`the golan's first line of defense`)}
+                        <p className="mt-8 px-3 text-pretty text-lg md:text-2xl font-medium text-primary sm:text-xl/8  second_textBanner" dir="rtl">
+                            עמותת פרא מזמינה אתכם לקחת חלק בהגנה על תושבי רמת הגולן מול איומי הטרור ולתמוך ב
                         </p>
                     </div>
                 </div>
