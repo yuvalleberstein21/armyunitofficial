@@ -4,7 +4,7 @@ import { getLanguage } from '../helpers/i18n';
 import SectionTitle from '../components/SectionTitle';
 
 
-const Organizations = () => {
+const HowItStart = () => {
     const { t } = useTranslation();
     const lang = getLanguage();
     const isRtl = lang === 'he';
@@ -52,4 +52,4 @@ const Organizations = () => {
     )
 }
 
-export default Organizations
+export default HowItStart

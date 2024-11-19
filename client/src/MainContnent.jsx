@@ -1,9 +1,9 @@
 import Banner from './layouts/Banner';
-import Organizations from './pages/Organizations';
-import SaveHouse from './components/saveHouse';
 import AboutUs from './pages/AboutUs';
-import Amuta from './pages/Amuta';
 import Activities from './pages/Activities';
+import HowItStart from './pages/WhoItStart';
+import OurMission from './pages/OurMission';
+import Association from './pages/Association';
 
 
 
@@ -15,16 +15,16 @@ function MainContent() {
                 <Banner />
             </section>
             <section id='NorthernSecurity'>
-                <Organizations />
+                <HowItStart />
             </section>
-            <section id='SaveOurHouse'>
-                <SaveHouse />
+            <section id='ourmissoin'>
+                <OurMission />
             </section>
             <section id='AboutUs'>
                 <AboutUs />
             </section>
             <section id='foundation'>
-                <Amuta />
+                <Association />
             </section>
             <section id='activities'>
                 <Activities />

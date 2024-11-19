@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
-import SectionTitle from './SectionTitle';
 import GolanMap from '/images/map2.jpeg';
 import { getLanguage } from '../helpers/i18n';
+import SectionTitle from '../components/SectionTitle';
 
 
-const SaveHouse = () => {
+const OurMission = () => {
     const { t } = useTranslation();
     const lang = getLanguage();
     const isRtl = lang === 'he';
@@ -44,4 +44,4 @@ const SaveHouse = () => {
     )
 }
 
-export default SaveHouse;
+export default OurMission;

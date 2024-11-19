@@ -7,7 +7,7 @@ import Logo from '/images/logo-nobg.png';
 
 const navigation = [
     { name: 'איך הכל התחיל', href: '#NorthernSecurity' },
-    { name: 'המשימה שלנו', href: '#SaveOurHouse' },
+    { name: 'המשימה שלנו', href: '#ourmissoin' },
     { name: 'יחידת פרא', href: '#AboutUs' },
     { name: 'עמותת פרא', href: '#foundation' },
     { name: 'פעילות העמותה', href: '#activities' },

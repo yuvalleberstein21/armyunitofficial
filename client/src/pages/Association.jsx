@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { FaArrowDown } from "react-icons/fa";
 import { getLanguage } from "../helpers/i18n";
 
-const Amuta = () => {
+const Association = () => {
     const { t } = useTranslation();
     const lang = getLanguage();
     const isRtl = lang === 'he';
@@ -40,4 +40,4 @@ const Amuta = () => {
     )
 }
 
-export default Amuta;
+export default Association;
