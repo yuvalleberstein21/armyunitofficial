@@ -14,19 +14,19 @@ function MainContent() {
             <section id="home">
                 <Banner />
             </section>
-            <section id='NorthernSecurity'>
+            <section id="NorthernSecurity">
                 <HowItStart />
             </section>
-            <section id='ourmissoin'>
+            <section id="ourmissoin">
                 <OurMission />
             </section>
-            <section id='AboutUs'>
+            <section id="AboutUs">
                 <AboutUs />
             </section>
-            <section id='foundation'>
+            <section id="foundation">
                 <Association />
             </section>
-            <section id='activities'>
+            <section id="activities">
                 <Activities />
             </section>
         </main>

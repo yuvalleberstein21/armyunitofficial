@@ -10,18 +10,18 @@ const Association = () => {
         <div className="relative h-[570px] lg:h-[450px] md:h-[450px] mt-0 lg:mt-14 md:mt-10 mx-auto" dir="rtl">
             {/* <!-- Background Image --> */}
             <img
-                src="./images/idf9.jpg"
+                src="./images/idf8.jpg"
                 alt="IDF Commando Image"
                 className="object-cover w-full h-full bg-center bg-no-repeat opacity-80"
             />
 
             {/* <!-- Dark Overlay with Gradient --> */}
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-800 to-transparent opacity-90"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-800 to-transparent opacity-85"></div>
 
             {/* <!-- Content Overlay --> */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-primary px-2 lg:px-8 space-y-6">
                 {/* <!-- Main Heading --> */}
-                <h1 className="text-3xl lg:text-4xl md:text-4xl font-extrabold text-accent-light drop-shadow-lg">
+                <h1 className="text-4xl lg:text-4xl md:text-4xl font-semibold text-accent-light leading-relaxed drop-shadow-lg">
                     {t('pereh association')}
                 </h1>
 

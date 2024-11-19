@@ -127,3 +127,8 @@ header {
     font-size: 20px !important;
   }
 }
+/* @media only screen and (max-height: 800px) and (max-width: 360px) {
+  .homePageBottom {
+    bottom: -3rem;
+  }
+} */

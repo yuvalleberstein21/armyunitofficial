@@ -9,7 +9,7 @@ const HowItStart = () => {
     const lang = getLanguage();
     const isRtl = lang === 'he';
     return (
-        <div className="container mx-auto p-4 pt-10 mt-10 lg:pt-16 organization" dir={isRtl ? 'rtl' : 'ltr'}>
+        <div className="container mx-auto p-4 py-5 lg:pt-16 organization" dir={isRtl ? 'rtl' : 'ltr'}>
 
             <div className='organization_title'>
                 <SectionTitle title={"איך הכל התחיל"} />
