@@ -97,13 +97,15 @@ header {
   }
 }
 
-@media only screen and (max-height: 780px) and (max-width: 360px) {
-  .homePageBottom {
-    bottom: -9rem;
+@media only screen and (max-height: 568px) and (max-width: 360px) {
+  .container-banner {
+    padding: 0.2rem 0;
   }
-
+  .homePageBottom {
+    bottom: -7rem !important;
+  }
   .organization_title {
-    padding-top: 3rem;
+    padding-top: 6rem;
   }
   .aboutus_title {
     padding-bottom: 1rem;
@@ -114,8 +116,32 @@ header {
   .second_textBanner {
     font-size: 1rem;
   }
-  .organization {
-    margin-top: 6rem !important;
+  p {
+    font-size: 16px !important;
+  }
+  .section_title {
+    font-size: 23px !important;
+  }
+  .h2 {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (width: 360px) and (height: 780px) {
+  .homePageBottom {
+    bottom: -10rem !important;
+  }
+  .organization_title {
+    padding-top: 6rem;
+  }
+  .aboutus_title {
+    padding-bottom: 1rem;
+  }
+  .text-banner {
+    font-size: 2rem;
+  }
+  .second_textBanner {
+    font-size: 1rem;
   }
   p {
     font-size: 16px !important;

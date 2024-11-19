@@ -22,12 +22,11 @@ const Banner = () => {
                 <div className="absolute inset-0 -z-10 bg-black opacity-30"></div>
 
                 {/* Title and Description at the bottom */}
-                <div className="absolute inset-x-0 bottom-0 z-10 bg-accent-light opacity-100 lg:opacity-90 mx-0 mt-4 lg:mx-16 md:mx-16 lg:py-5 md:py-5 homePageBottom">
-                    <div className="w-full flex items-center">
-                        <div className="w-full px-8 lg:w-3/4 md:w-4/5" dir={isRtl ? 'rtl' : 'ltr'}>
-                            <h1 className="text-3xl lg:text-5xl md:text-5xl font-bold text-gray-800 py-3">{t('pereh association')}</h1>
+                <div className="absolute inset-x-0 bottom-0 z-10 bg-accent-light opacity-100 lg:opacity-90 lg:px-36 mt-10 lg:py-5 md:py-5 homePageBottom">
+                    <div className="w-full flex items-center" dir={isRtl ? 'rtl' : 'ltr'}>
+                        <div className="w-full lg:w-3/4 md:w-4/5 px-5 py-3">
                             <h2
-                                className="text-gray-800 pb-5 font-normal leading-relaxed text-base lg:text-base max-w-2xl md:text-lg md:max-w-2xl lg:max-w-xl lg:text-justify md:text-justify homePageBottomText">
+                                className="text-gray-800 pb-2 font-normal leading-relaxed text-base lg:text-base max-w-2xl md:text-lg md:max-w-2xl lg:max-w-xl  md:text-justify homePageBottomText">
                                 {t('pereh Association works to provide financial, reputational, and operational support to the Pereh Unit, with the goal of strengthening its independence and enhancing its capabilities to protect the residents of the Golan Heights. With your donation, we can continue to strengthen the unit and ensure the safety of Golan residents. Join us and take part in protecting the Golan Heights and ensuring the security of its residents.')}
                             </h2>
                         </div>
@@ -38,15 +37,14 @@ const Banner = () => {
                 </div>
 
                 {/* Title Section */}
-                <div className="mx-auto max-w-2xl py-20 lg:py-40 md:py-36">
+                <div className="mx-auto max-w-2xl py-20 lg:py-40 md:py-36 container-banner">
                     <div className="text-center py-24">
                         <h1 className="text-5xl font-semibold text-primary sm:text-7xl text-banner">
-                            {t('elite pereh')}
+                            {t('pereh association')}
                             <br />
-                            {t('commando unit')}
                         </h1>
-                        <p className="mt-8 px-3 text-pretty text-lg md:text-2xl font-medium text-primary sm:text-xl/8  second_textBanner" dir="rtl">
-                            עמותת פרא מזמינה אתכם לקחת חלק בהגנה על תושבי רמת הגולן מול איומי הטרור ולתמוך ב
+                        <p className="mt-5 px-3 text-pretty text-lg md:text-2xl font-medium text-primary sm:text-xl/8 second_textBanner" dir="rtl">
+                            {t(`supporting the Golan's first line defense - Pereh elite unit`)}
                         </p>
                     </div>
                 </div>

@@ -11,8 +11,8 @@ const HowItStart = () => {
     return (
         <div className="container mx-auto p-4 py-5 lg:pt-16 organization" dir={isRtl ? 'rtl' : 'ltr'}>
 
-            <div className='organization_title'>
-                <SectionTitle title={"איך הכל התחיל"} />
+            <div className='organization_title items-center flex justify-center text-center'>
+                <SectionTitle title={t("the Golan's first line of defence")} />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:p-8 md:p-4 items-center">

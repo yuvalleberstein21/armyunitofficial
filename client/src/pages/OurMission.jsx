@@ -19,7 +19,9 @@ const OurMission = () => {
             {/* <!-- Title Section --> */}
 
 
-            <SectionTitle title={t('taking charge of our home')} />
+            <div className='items-center flex justify-center text-center'>
+                <SectionTitle title={t('taking charge of our home')} />
+            </div>
 
             {/* <!-- Slanted Grid Section --> */}
             <div className="relative mt-5 bg-primary shadow-sm rounded-lg overflow-hidden">
