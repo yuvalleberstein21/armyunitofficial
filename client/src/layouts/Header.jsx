@@ -6,11 +6,11 @@ import Logo from '/images/logo-nobg.png';
 
 
 const navigation = [
-    { name: 'ביטחון הצפון', href: '#NorthernSecurity' },
-    { name: 'שומרים על הבית', href: '#SaveOurHouse' },
-    { name: 'על היחידה', href: '#AboutUs' },
+    { name: 'איך הכל התחיל', href: '#NorthernSecurity' },
+    { name: 'המשימה שלנו', href: '#SaveOurHouse' },
+    { name: 'יחידת פרא', href: '#AboutUs' },
     { name: 'עמותת פרא', href: '#foundation' },
-    { name: 'פעולות העומתה', href: '#activities' },
+    { name: 'פעילות העמותה', href: '#activities' },
 ]
 
 const Header = () => {
