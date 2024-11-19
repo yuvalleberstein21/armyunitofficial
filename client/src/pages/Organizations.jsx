@@ -10,11 +10,17 @@ const Organizations = () => {
     const isRtl = lang === 'he';
     return (
         <div className="container mx-auto p-4 pt-10 mt-10 lg:pt-16 organization" dir={isRtl ? 'rtl' : 'ltr'}>
-            <SectionTitle title={"איך הכל התחיל"} />
+
+            <div className='organization_title'>
+                <SectionTitle title={"איך הכל התחיל"} />
+            </div>
+
+
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:p-8 md:p-4 items-center">
 
                 {/* Text and Logo Column */}
-                <div className="space-y-6">
+                <div className="space-y-3">
                     <div className="flex justify-center lg:justify-start md:justify-start items-center hidden md:block lg:block">
                         <img src={Logo} alt="Logo" className="w-1/2 h-32 opacity-90" />
                     </div>

@@ -10,7 +10,10 @@ const AboutUs = () => {
 
     return (
         <div className={"container mx-auto p-5"} dir={isRtl ? 'rtl' : 'ltr'}>
-            <SectionTitle title={t('meet the pereh unit')} />
+            <div className="aboutus_title">
+                <SectionTitle title={t('meet the pereh unit')} />
+            </div>
+
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
 
                 {/* <!-- First Section --> */}

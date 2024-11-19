@@ -99,7 +99,14 @@ header {
 
 @media only screen and (max-height: 568px) and (max-width: 360px) {
   .homePageBottom {
-    bottom: -8rem;
+    bottom: -9rem;
+  }
+
+  .organization_title {
+    padding-top: 1rem;
+  }
+  .aboutus_title {
+    padding-bottom: 1rem;
   }
   .text-banner {
     font-size: 2rem;

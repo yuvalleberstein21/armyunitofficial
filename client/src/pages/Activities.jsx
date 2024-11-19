@@ -1,26 +1,30 @@
+import { useTranslation } from "react-i18next";
 import CardGrid from "../components/CardGrid";
 import SectionTitle from "../components/SectionTitle";
+import { getLanguage } from "../helpers/i18n";
+
+
 
 const cardData = [
     {
-        title: "פיתוח קשרי קהילה בין תושבי הגולן ליחידה",
-        description: "פיתוח קשרי קהילה בין תושבי הגולן ליחידה ייזום תוכניות לשיח וגיבוש עם תושבי הגולן במטרה לבנות קשרים משמעותיים ולחזק את שיתוף הפעולה, באמצעות אירועים משותפים ופעילויות חברתיות מגוונות."
+        title: 'fostering community ties',
+        description: "creating programs for dialogue and unity with Golan residents to build meaningful relationships and strengthen cooperation through shared events and social activities."
     },
     {
-        title: "הקמת מתקני אימונים ייעודיים ליחידה",
-        description: "השקעה בהקמת מתקני אימונים מתקדמים המיועדים לצרכים הייחודיים של היחידה, במטרה לשפר את יכולות הלוחמים ולהבטיח הכנה מיטבית לכל תרחיש."
+        title: "establishing Specialized Training Facilities",
+        description: "investing in state-of-the-art training facilities tailored to the unique needs of the unit to enhance the fighters’ capabilities and ensure optimal preparation for every scenario."
     },
     {
-        title: "גיוס חיילים נוספים ליחידה",
-        description: "גיוס חיילים חדשים במטרה לחזק את כוחות היחידה ולהתאים את כוח האדם לאיומים הקיימים, כדי להבטיח את המוכנות המבצעית והיכולת להגיב במהירות וביעילות לכל תרחיש."
+        title: "recruiting Additional Fighters",
+        description: "recruiting new members to bolster the unit's strength and align its manpower with current threats, ensuring rapid and effective response capabilities."
     },
     {
-        title: "השלמת תהליכי הצטיידות ברכש שאינו נכלל בסל הצבאי",
-        description: "רכישת ציוד נוסף שאינו כלול בסל הציוד הצבאי, כדי להבטיח שלוחמי היחידה מצוידים במיטב הכלים והטכנולוגיות הנדרשות."
+        title: "procuring Essential Equipment",
+        description: "acquiring additional equipment not covered by standard military supplies to equip the fighters with the best tools and technologies."
     },
     {
-        title: "תמיכה וסיוע לאנשי היחידה ומשפחותיהם",
-        description: "הענקת תמיכה נפשית וכלכלית לחיילי היחידה ומתן סיוע למשפחות החיילים במצבי קיצון כמו מלחמה במטרה להבטיח שהן מקבלות את התמיכה הנדרשת, כולל תמיכה נפשית, כלכלית ולוגיסטית."
+        title: "supporting Unit Members and Their Families",
+        description: "providing mental and financial support to the unit’s soldiers and their families during critical times, ensuring they receive the necessary assistance, including emotional, economic, and logistical support."
     },
     {
         title: "קידום תפיסת ההגנה של ״הלוחם המקומי״",
@@ -28,18 +32,25 @@ const cardData = [
     },
 
 ];
-
 const Activities = () => {
+    const { t } = useTranslation();
+    const lang = getLanguage();
+    const isRtl = lang === 'he';
+
     return (
         <div className="container mx-auto md:p-5 p-4 lg:pt-16 md:pt-8">
-            <SectionTitle title="פעילות העמותה" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-3 py-5 gap-6 lg:p-8">
+            <div className="activities_title">
+                <SectionTitle title="פעילות העמותה" />
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 py-5 gap-6 lg:p-8">
                 {cardData.map((card, index) => (
                     <CardGrid
                         key={index}
                         image={card.image}
-                        title={card.title}
-                        description={card.description}
+                        title={t(card.title)}
+                        description={t(card.description)}
+                        isRtl={isRtl}
                     />
                 ))}
             </div>
