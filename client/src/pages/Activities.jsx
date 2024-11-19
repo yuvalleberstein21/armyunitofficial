@@ -38,7 +38,7 @@ const Activities = () => {
     const isRtl = lang === 'he';
 
     return (
-        <div className="container mx-auto md:p-5 p-4 lg:pt-16 md:pt-8">
+        <div className="container mx-auto md:p-5 p-4 mt-4 lg:pt-16 md:pt-8">
             <div className="activities_title">
                 <SectionTitle title="פעילות העמותה" />
             </div>

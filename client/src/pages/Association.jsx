@@ -21,7 +21,7 @@ const Association = () => {
             {/* <!-- Content Overlay --> */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-primary px-2 lg:px-8 space-y-6">
                 {/* <!-- Main Heading --> */}
-                <h1 className="text-4xl lg:text-4xl md:text-4xl font-semibold text-accent-light leading-relaxed drop-shadow-lg">
+                <h1 className="text-3xl lg:text-4xl md:text-4xl font-semibold text-accent-light leading-relaxed drop-shadow-lg">
                     {t('pereh association')}
                 </h1>
 
