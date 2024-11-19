@@ -25,10 +25,10 @@ const Banner = () => {
                 {/* Top 75% - Title Section */}
                 <div className="flex-grow flex items-center justify-center">
                     <div className="text-center px-4">
-                        <h1 className="text-4xl font-semibold text-primary sm:text-5xl text-banner">
+                        <h1 className="text-5xl font-semibold text-primary sm:text-5xl text-banner">
                             {t('pereh association')}
                         </h1>
-                        <p className="text-md py-3 md:text-2xl font-medium text-primary sm:text-xl/8 second_textBanner" dir="rtl">
+                        <p className="text-lg py-3 md:text-2xl font-medium text-primary sm:text-xl/8 second_textBanner" dir="rtl">
                             {t(`supporting the Golan's first line defense - Pereh elite unit`)}
                         </p>
                     </div>
