@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { FaArrowDown } from "react-icons/fa";
 import { getLanguage } from "../helpers/i18n";
 
 const Association = () => {
@@ -7,7 +6,7 @@ const Association = () => {
     const lang = getLanguage();
     const isRtl = lang === 'he';
     return (
-        <div className="relative h-[570px] lg:h-[450px] md:h-[450px] mt-0 lg:mt-14 md:mt-10 mx-auto" dir="rtl">
+        <div className="relative h-[500px] lg:h-[450px] md:h-[450px] mt-0 lg:mt-14 md:mt-10 mx-auto" dir="rtl">
             {/* <!-- Background Image --> */}
             <img
                 src="./images/idf10.jpg"
