@@ -25,21 +25,11 @@ section {
   height: 100% !important;
 }
 
-.typing-wrapper {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: blink-caret 0.75s step-end infinite;
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
+.banner-placeholder {
+  background-color: #000; /* Fallback color */
+  background-image: url('/images/idf7-small-blurred.webp'); /* Blurred or low-quality version */
+  background-size: cover;
+  background-position: center;
 }
 
 .fixed {
