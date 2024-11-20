@@ -27,8 +27,8 @@ const cardData = [
         description: "providing mental and financial support to the unit’s soldiers and their families during critical times, ensuring they receive the necessary assistance, including emotional, economic, and logistical support."
     },
     {
-        title: "קידום תפיסת ההגנה של ״הלוחם המקומי״",
-        description: "חיזוק התפיסה של ״הלוחם המקומי״ כמרכיב מרכזי במענה על האיומים באזור הגולן בפרט ומדינת ישראל ככלל, באמצעות הכשרה והדרכה שמדגישות את היתרון של הלוחם המכיר את השטח, את התושבים ואת האתגרים הייחודיים של כל איזור בו הוא פועל. "
+        title: "advancing the Concept of the 'Local Fighter'",
+        description: "strengthening the concept of the 'local fighter' as a key element in addressing threats in the Golan area specifically, and in Israel as a whole, through training and education that emphasize the advantage of fighters who are familiar with the terrain, the residents, and the unique challenges of each area in which they operate."
     },
 
 ];
@@ -40,7 +40,7 @@ const Activities = () => {
     return (
         <div className="container mx-auto md:p-5 p-4 mt-4 lg:pt-16 md:pt-8">
             <div className="activities_title">
-                <SectionTitle title="פעילות העמותה" />
+                <SectionTitle title={t('association activities')} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 py-5 gap-6 lg:p-8">

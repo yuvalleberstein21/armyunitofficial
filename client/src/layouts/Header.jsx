@@ -6,11 +6,11 @@ import Logo from '/images/logo-nobg.png';
 
 
 const navigation = [
-    { name: 'איך הכל התחיל', href: '#NorthernSecurity' },
-    { name: 'המשימה שלנו', href: '#ourmissoin' },
-    { name: 'יחידת פרא', href: '#AboutUs' },
-    { name: 'עמותת פרא', href: '#foundation' },
-    { name: 'פעילות העמותה', href: '#activities' },
+    { name: 'who it start?', href: '#NorthernSecurity' },
+    { name: 'our Mission', href: '#ourmissoin' },
+    { name: 'elite pereh', href: '#AboutUs' },
+    { name: 'pereh association', href: '#foundation' },
+    { name: 'association activities', href: '#activities' },
 ]
 
 const Header = () => {
@@ -35,7 +35,7 @@ const Header = () => {
                         selectedLanguage === 'he' ? (
                             <a href="#" className="-m-1.5 p-1.5 px-4 py-2 md:py-3 lg:py-4">
                                 <span
-                                    className="text-primary font-semibold text-lg lg:text-lg md:text-2xl bg-accent-light px-3 py-1"
+                                    className="text-primary relative font-semibold text-lg lg:text-lg md:text-2xl bg-accent-light px-3 py-1"
                                     onClick={() => switchLanguage('en')}>ENG</span>
                             </a>
                         ) : (
@@ -103,7 +103,7 @@ const Header = () => {
                                         href={item.href}
                                         className="-mx-3 block rounded-lg px-3 py-2 text-lg md:text-xl font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                     >
-                                        {item.name}
+                                        {t(item.name)}
                                     </a>
                                 ))}
                             </div>

@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import GolanMap from '/images/IRAN MILITIONS.jpg';
 import { getLanguage } from '../helpers/i18n';
 import SectionTitle from '../components/SectionTitle';
 
@@ -30,7 +29,7 @@ const OurMission = () => {
                     {/* <!-- Image Column (Left) --> */}
                     <div className="flex justify-center items-center">
                         <img
-                            src={GolanMap}
+                            src='/images/IRAN MILITIONS.webp'
                             alt="Descriptive Alt Text"
                             className="w-full h-48 lg:h-80 max-w-sm lg:max-w-md shadow-lg rounded-lg border-4 border-primary"
                         />
