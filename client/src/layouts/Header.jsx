@@ -6,8 +6,8 @@ import Logo from '/images/logo-nobg.png';
 
 
 const navigation = [
-    { name: 'who it start?', href: '#NorthernSecurity' },
-    { name: 'our Mission', href: '#ourmissoin' },
+    { name: 'who it start', href: '#NorthernSecurity' },
+    { name: 'our mission', href: '#ourmissoin' },
     { name: 'elite pereh', href: '#AboutUs' },
     { name: 'pereh association', href: '#foundation' },
     { name: 'association activities', href: '#activities' },

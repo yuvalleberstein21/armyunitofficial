@@ -29,12 +29,7 @@ const Association = () => {
                 <p className={"bg-primary bg-opacity-40 p-2 md:p-6 rounded-lg shadow-lg max-w-2xl text-lg leading-relaxed drop-shadow-md"} dir={isRtl ? "rtl" : "ltr"}>
                     {t('the pereh association invites you to play a key role in realizing the unit`s vision: defending the Golan Heights`s residents against imminent terror threats. Your support ensures the unit`s independence and funds its operational and logistical needs, allowing the fighters to perform at their best in any situation. In the complex security environment of the Golan, every moment counts. Preparedness and adequate resources are critical to the unit`s success.')}
                 </p>
-                <span
-                    className="bg-accent-light cursor-pointer flex justify-between gap-2 text-slate-900 px-8 py-3 text-lg rounded-full font-semibold hover:bg-accent-dark hover:text-white transition-colors duration-300 shadow-md"
-                >
-                    תחומי העמותה
-                    <FaArrowDown size={15} className="mt-1" />
-                </span>
+
             </div>
         </div>
     )

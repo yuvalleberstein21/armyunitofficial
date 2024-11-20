@@ -11,7 +11,7 @@ const Banner = () => {
         <div className="relative isolate min-h-screen flex flex-col">
             {/* Background Image */}
             <img
-                src='/images/idf7.webp'
+                src='/images/idf7.jpg'
                 alt="IDF BANNER IMAGE"
                 className="absolute inset-0 -z-10 w-full h-full object-cover bg-center opacity-80"
                 loading="lazy"
