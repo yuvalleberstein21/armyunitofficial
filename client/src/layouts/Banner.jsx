@@ -8,6 +8,8 @@ const Banner = () => {
     const isRtl = lang === 'he';
 
     return (
+
+
         <div className="relative isolate min-h-screen flex flex-col">
             {/* Background Image */}
             <img
@@ -35,8 +37,9 @@ const Banner = () => {
                 </div>
 
                 {/* Bottom 25% - Description and Logo */}
-                <div className="h-2/5 bg-accent-light bg-opacity-100 lg:bg-opacity-90 py-4 mx-0 md:mx-24 lg:mx-28">
+                <div className="h-2/5 bg-accent-light bg-opacity-100 lg:bg-opacity-90 py-10 mx-0 md:mx-0 lg:mx-28">
                     <div className="flex items-center max-w-6xl mx-auto h-full" dir={isRtl ? 'rtl' : 'ltr'}>
+
                         <div className="w-full lg:w-3/4 px-5">
                             <h2 className="text-gray-800 font-normal leading-relaxed text-sm md:text-base lg:text-base">
                                 {t('pereh Association works to provide financial, reputational, and operational support to the Pereh Unit, with the goal of strengthening its independence and enhancing its capabilities to protect the residents of the Golan Heights. With your donation, we can continue to strengthen the unit and ensure the safety of Golan residents. Join us and take part in protecting the Golan Heights and ensuring the security of its residents.')}
