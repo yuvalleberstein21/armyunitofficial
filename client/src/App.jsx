@@ -24,7 +24,7 @@ function App() {
       <footer>
         <div className="py-3 items-center bg-accent-light" dir="rtl">
           <span className="w-full flex justify-center text-center font-semibold text-secondary">
-            {t(`supporting the Golan's first line defense - Pereh elite unit`)}
+            {t(`supporting the Golan's first line defense`)}
           </span>
         </div>
       </footer>
