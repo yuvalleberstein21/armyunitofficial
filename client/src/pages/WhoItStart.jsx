@@ -30,7 +30,7 @@ const HowItStart = () => {
                 </div>
 
                 {/* Video Column */}
-                <div className="relative h-80 rounded-lg overflow-hidden shadow-lg lg:h-[450px] md:h-[450px]">
+                <div className="relative h-80 w-full rounded-lg overflow-hidden lg:h-[450px] md:h-[450px]">
                     <iframe
                         className="w-full h-full object-cover rounded-lg"
                         src="https://www.youtube.com/embed/J5fM50ZLNSQ?autoplay=1&mute=1&loop=1&playlist=J5fM50ZLNSQ"
