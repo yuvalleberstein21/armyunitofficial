@@ -107,14 +107,6 @@ const Header = () => {
                                     </a>
                                 ))}
                             </div>
-                            <div className="py-6">
-                                <a
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-lg md:text-xl font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                >
-                                    תרומות
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
