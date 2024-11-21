@@ -10,11 +10,15 @@ import AccessibilityWidget from './components/AccessibilityWidget';
 function App() {
 
   return (
-    <>
+    <div className="relative min-h-screen">
+      {/* Accessibility Widget - Positioned Absolutely */}
+      <div className="fixed top-4 left-4 z-50">
+        <AccessibilityWidget />
+      </div>
 
       <Header />
       <MainContent />
-      <AccessibilityWidget />
+
       <footer>
         <div className="py-3 items-center bg-accent-light" dir="rtl">
           <span className="w-full flex justify-center text-center font-semibold text-secondary">
@@ -22,7 +26,7 @@ function App() {
           </span>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
 
