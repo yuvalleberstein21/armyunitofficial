@@ -31,6 +31,10 @@ section {
   background-size: cover;
   background-position: center;
 }
+._access-icon {
+  left: 0 !important;
+  top: 8rem !important;
+}
 
 .fixed {
   z-index: 9999; /* Try this higher value */
