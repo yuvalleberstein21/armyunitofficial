@@ -35,7 +35,7 @@ const Banner = () => {
                 </div>
 
                 {/* Bottom 25% - Description and Logo */}
-                <div className="h-2/4 bg-accent-light bg-opacity-100 lg:bg-opacity-90 py-4 px-4 mx-0 md:mx-24 lg:mx-28">
+                <div className="h-2/5 bg-accent-light bg-opacity-100 lg:bg-opacity-90 py-4 mx-0 md:mx-24 lg:mx-28">
                     <div className="flex items-center max-w-6xl mx-auto h-full" dir={isRtl ? 'rtl' : 'ltr'}>
                         <div className="w-full lg:w-3/4 px-5">
                             <h2 className="text-gray-800 font-normal leading-relaxed text-sm md:text-base lg:text-base">
