@@ -30,7 +30,7 @@ const HowItStart = () => {
                 </div>
 
                 {/* Video Column */}
-                {/* <div className="relative lg:h-full md:min-h-full h-80 w-full rounded-lg overflow-hidden">
+                <div className="relative lg:h-full md:min-h-full h-80 w-full rounded-lg overflow-hidden">
                     <iframe
                         className="min-w-full h-full object-cover rounded-lg"
                         src="https://www.youtube.com/embed/J5fM50ZLNSQ?autoplay=1&mute=1&loop=1&playlist=J5fM50ZLNSQ"
@@ -39,8 +39,9 @@ const HowItStart = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
+                        loading="lazy"
                     ></iframe>
-                </div> */}
+                </div>
             </div>
         </div>
     )

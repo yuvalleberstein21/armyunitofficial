@@ -7,17 +7,9 @@
   display: block;
 }
 
-section {
-  height: 100% !important;
-}
-
 ._access-icon {
   left: 0 !important;
   bottom: 2rem !important;
-}
-
-.fixed {
-  z-index: 9999; /* Try this higher value */
 }
 
 @media only screen and (max-height: 568px) and (max-width: 360px) {
