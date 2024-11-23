@@ -3,24 +3,6 @@
   background: rgb(222, 190, 93);
 }
 
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-html,
-body {
-  width: 100% !important;
-  height: 100vh;
-  overflow-x: hidden;
-  background-color: #f4f4f5;
-  scroll-behavior: smooth;
-}
-body {
-  font-family: 'Heebo', sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-} */
 .app {
   display: block;
 }
