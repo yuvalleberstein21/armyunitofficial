@@ -10,7 +10,7 @@ function App() {
   const { t } = useTranslation();
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen app">
       <div className="fixed top-4 left-4 z-50">
         <AccessibilityWidget />
       </div>
