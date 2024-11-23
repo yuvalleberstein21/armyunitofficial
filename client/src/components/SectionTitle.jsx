@@ -5,7 +5,7 @@ const SectionTitle = ({ title }) => {
     const lang = getLanguage();
     const isLarge = lang === 'he';
     return (
-        <div className="py-5 flex justify-center items-center flex-col">
+        <div className="py-5 px-2 flex justify-center items-center flex-col">
             <h1 className={isLarge ? "text-3xl lg:text-4xl md:text-4xl font-bold text-accent-dark section_title" : "text-3xl lg:text-4xl md:text-4xl font-bold text-accent-dark section_title"}>
                 {title}
             </h1>
