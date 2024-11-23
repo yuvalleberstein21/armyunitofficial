@@ -8,11 +8,11 @@ const Association = () => {
     return (
         <div className="relative h-[500px] lg:h-[450px] md:h-[450px] mt-0 lg:mt-14 md:mt-10 mx-auto" dir="rtl">
             {/* <!-- Background Image --> */}
-            <img
+            {/* <img
                 src="./images/idf10.jpg"
                 alt="IDF Commando Image"
                 className="object-cover w-full h-full bg-center bg-no-repeat opacity-80"
-            />
+            /> */}
 
             {/* <!-- Dark Overlay with Gradient --> */}
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-800 to-transparent opacity-85"></div>
