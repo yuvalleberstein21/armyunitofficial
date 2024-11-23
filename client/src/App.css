@@ -2,13 +2,7 @@
   color: white;
   background: rgb(222, 190, 93);
 }
-#root {
-  opacity: 0;
-  transition: opacity 0.2s ease-in;
-}
-#root.loaded {
-  opacity: 100;
-}
+
 * {
   padding: 0;
   margin: 0;
@@ -27,16 +21,13 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+.app {
+  /* Remove any transitions or animations */
+  display: block;
+}
 
 section {
   height: 100% !important;
-}
-
-.banner-placeholder {
-  background-color: #000; /* Fallback color */
-  background-image: url('/images/idf7-small-blurred.webp'); /* Blurred or low-quality version */
-  background-size: cover;
-  background-position: center;
 }
 
 ._access-icon {
