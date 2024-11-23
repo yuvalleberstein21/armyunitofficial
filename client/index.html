@@ -81,9 +81,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
     <link rel="preload" as="image" href="/images/idf7.jpg" />
     <link rel="preload" as="image" href="/images/logo-nobg.png" />
     <link rel="preload" as="image" href="/images/idf4.jpg" />

@@ -2,6 +2,13 @@
   color: white;
   background: rgb(222, 190, 93);
 }
+#root {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+#root.loaded {
+  opacity: 100;
+}
 * {
   padding: 0;
   margin: 0;
