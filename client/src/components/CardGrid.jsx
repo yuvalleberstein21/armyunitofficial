@@ -1,5 +1,4 @@
 
-
 const CardGrid = ({ title, description, isRtl }) => {
     return (
         <div

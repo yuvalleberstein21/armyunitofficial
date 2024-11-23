@@ -23,12 +23,10 @@ var labels = {
 };
 
 var options = { labels: labels };
-options.textToSpeechLang = 'he-IL'; // or any other language
-options.speechToTextLang = 'he-IL'; // or any other language
+options.textToSpeechLang = 'he-IL';
+options.speechToTextLang = 'he-IL';
 new Accessibility(options);
 function AccessibilityWidget() {
-
-
     return (
         <></>
     );

@@ -2,7 +2,6 @@ import { useState } from "react"
 import { useTranslation } from 'react-i18next';
 import { AiOutlineBars } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
-import Logo from '/images/logo-nobg.png';
 
 
 const navigation = [
@@ -29,7 +28,7 @@ const Header = () => {
             <nav className="flex items-center justify-between p-5 lg:p-2 lg:px-8 md:p-8 bg-white shadow-lg">
                 <div className="flex lg:flex-1">
                     <a href="#home" className="-m-1.5 p-1.5">
-                        <img src={Logo} alt="LOGO" className="px-3 w-24 md:w-32" />
+                        <img src='/images/logo-nobg.png' alt="LOGO" className="px-3 w-24 md:w-32" />
                     </a>
                     {
                         selectedLanguage === 'he' ? (
@@ -83,7 +82,7 @@ const Header = () => {
                 >
                     <div className="flex items-center justify-between">
                         <a href="#home" className="-m-1.5 p-1.5">
-                            <img src={Logo} alt="logo" className="w-28" />
+                            <img src="/images/logo-nobg.png" alt="logo" className="w-28" />
                         </a>
                         <button
                             type="button"

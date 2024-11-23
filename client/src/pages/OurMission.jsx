@@ -10,13 +10,11 @@ const OurMission = () => {
 
 
     return (
-
         <div
             className={`container mx-auto w-full h-full relative py-6 lg:px-8`}
             dir={isRtl ? 'ltr' : 'rtl'}
         >
             {/* <!-- Title Section --> */}
-
 
             <div className='items-center flex justify-center text-center'>
                 <SectionTitle title={t('taking charge of our home')} />
