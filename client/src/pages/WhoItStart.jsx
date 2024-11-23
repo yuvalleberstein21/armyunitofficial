@@ -31,7 +31,7 @@ const HowItStart = () => {
 
                 {/* Video Column */}
                 <div className="relative lg:h-full md:min-h-full h-80 w-full rounded-lg overflow-hidden">
-                    {/* <iframe
+                    <iframe
                         className="min-w-full h-full object-cover rounded-lg"
                         src="https://www.youtube.com/embed/J5fM50ZLNSQ?autoplay=1&mute=1&loop=1&playlist=J5fM50ZLNSQ"
                         title="YouTube video player"
@@ -40,7 +40,7 @@ const HowItStart = () => {
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
                         loading="lazy"
-                    ></iframe> */}
+                    ></iframe>
                 </div>
             </div>
         </div>
