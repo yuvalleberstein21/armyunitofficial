@@ -4,38 +4,18 @@ import './helpers/i18n';
 import MainContent from './MainContnent';
 import AccessibilityWidget from './components/AccessibilityWidget';
 import { useTranslation } from 'react-i18next';
-import { useEffect, useState } from 'react';
-
-
-
-const SafeHydrate = ({ children }) => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  return isClient ? children : null;
-};
 
 
 function App() {
   const { t } = useTranslation();
 
-
   return (
-    <div className="relative min-h-screen app">
-      {/* Accessibility Widget - Positioned Absolutely */}
+    <div className="relative min-h-screen">
       <div className="fixed top-4 left-4 z-50">
         <AccessibilityWidget />
       </div>
-      <SafeHydrate>
-        <Header />
-      </SafeHydrate>
-
-      <SafeHydrate>
-        <MainContent />
-      </SafeHydrate>
+      <Header />
+      <MainContent />
       <footer>
         <div className="p-5 items-center bg-accent-dark">
           <span className="w-full flex justify-center text-center font-light text-primary">
