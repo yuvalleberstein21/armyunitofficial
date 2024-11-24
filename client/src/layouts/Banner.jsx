@@ -10,14 +10,17 @@ const Banner = () => {
     return (
 
         <div className="relative isolate min-h-screen flex flex-col">
+            <div className="absolute inset-0 -z-10 bg-[##f4f4f5]"></div>
             {/* Background Image */}
-            <img
-                src="/images/idf7.jpg"
-                alt="IDF BANNER IMAGE"
-                className="absolute inset-0 -z-10 w-full h-full object-cover bg-center opacity-80 banner-placeholder"
-                loading="eager"
-            />
-
+            <picture>
+                <source srcSet="/images/idf7.jpg" type="image/webp" media="(max-width: 600px)" />
+                <img
+                    src="/images/idf7.jpg"
+                    alt="IDF Banner Image"
+                    className="absolute inset-0 -z-10 w-full h-full object-cover opacity-80 banner-placeholder"
+                    loading="eager"
+                />
+            </picture>
             {/* Dark Overlay */}
             <div className="absolute inset-0 -z-10 bg-black opacity-30"></div>
 
