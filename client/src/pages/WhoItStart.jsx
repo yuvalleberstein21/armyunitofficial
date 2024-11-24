@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { getLanguage } from '../helpers/i18n';
 import SectionTitle from '../components/SectionTitle';
+import VideoCard from '../components/VideoCard';
 
 
 const HowItStart = () => {
@@ -31,16 +32,16 @@ const HowItStart = () => {
 
                 {/* Video Column */}
                 <div className="relative lg:h-full md:min-h-full h-80 w-full rounded-lg overflow-hidden">
-                    <iframe
+                    {/* <iframe
                         className="min-w-full h-full object-cover rounded-lg"
-                        src="https://www.youtube.com/embed/J5fM50ZLNSQ?autoplay=1&mute=1&loop=1&playlist=J5fM50ZLNSQ"
+                        src="https://www.youtube.com/embed/Ax4-63bbkvc?autoplay=1&loop=1&playlist=Ax4-63bbkvc&mute=1"
                         title="YouTube video player"
                         frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         loading="lazy"
-                    ></iframe>
+                    ></iframe> */}
+                    <VideoCard />
                 </div>
             </div>
         </div>
