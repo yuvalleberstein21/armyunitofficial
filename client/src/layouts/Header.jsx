@@ -5,11 +5,12 @@ import { IoClose } from "react-icons/io5";
 
 
 const navigation = [
-    { name: 'who it start', href: '#NorthernSecurity' },
+    { name: 'who it start', href: '#WhoItStart' },
     { name: 'our mission', href: '#ourmissoin' },
     { name: 'elite pereh', href: '#AboutUs' },
     { name: 'pereh association', href: '#foundation' },
     { name: 'association activities', href: '#activities' },
+    { name: 'contact', href: '#contact' },
 ]
 
 const Header = () => {

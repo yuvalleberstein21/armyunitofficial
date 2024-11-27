@@ -3,26 +3,20 @@ import Header from './layouts/Header'
 import './helpers/i18n';
 import MainContent from './MainContnent';
 import AccessibilityWidget from './components/AccessibilityWidget';
-import { useTranslation } from 'react-i18next';
+import FloatingContactButton from './components/FloatingContactButton';
 
 
 function App() {
-  const { t } = useTranslation();
+
 
   return (
     <div className="min-h-screen app">
       <div className="fixed top-4 left-4 z-50">
         <AccessibilityWidget />
+        <FloatingContactButton />
       </div>
       <Header />
       <MainContent />
-      <footer>
-        <div className="p-5 items-center bg-accent-dark">
-          <span className="w-full flex justify-center text-center font-light text-primary">
-            {t("© 2024 All rights reserved. Pereh Association")}
-          </span>
-        </div>
-      </footer>
     </div>
   )
 }

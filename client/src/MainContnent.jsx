@@ -4,6 +4,8 @@ import Activities from './pages/Activities';
 import HowItStart from './pages/WhoItStart';
 import OurMission from './pages/OurMission';
 import Association from './pages/Association';
+import Contact from './pages/Contact';
+import Footer from './layouts/Footer';
 
 
 
@@ -14,7 +16,7 @@ function MainContent() {
             <section id="home">
                 <Banner />
             </section>
-            <section id="NorthernSecurity">
+            <section id="WhoItStart">
                 <HowItStart />
             </section>
             <section id="ourmissoin">
@@ -29,6 +31,10 @@ function MainContent() {
             <section id="activities">
                 <Activities />
             </section>
+            <section id="contact">
+                <Contact />
+            </section>
+            <Footer />
         </main>
     );
 }

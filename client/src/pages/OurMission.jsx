@@ -21,13 +21,13 @@ const OurMission = () => {
             </div>
 
             {/* <!-- Slanted Grid Section --> */}
-            <div className="relative mt-5 bg-primary shadow-sm rounded-lg overflow-hidden">
-                <div className="absolute inset-0 bg-gray-200 -skew-y-6 transform origin-top-left"></div>
+            <div className="relative mt-5 bg-transparent lg:bg-primary md:bg-primary rounded-lg overflow-hidden">
+                <div className="absolute inset-0 bg-gray-200 -skew-y-3 lg:-skew-y-6 transform origin-top-left"></div>
                 <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 lg:p-12">
                     {/* <!-- Image Column (Left) --> */}
                     <div className="flex justify-center items-center">
                         <img
-                            src='/images/IRAN MILITIONS.webp'
+                            src='/images/north-image.jpg'
                             alt="Descriptive Alt Text"
                             className="w-full h-48 lg:h-80 max-w-sm lg:max-w-md shadow-lg rounded-lg border-4 border-primary"
                         />

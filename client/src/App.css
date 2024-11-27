@@ -9,7 +9,7 @@
 
 ._access-icon {
   left: 0 !important;
-  bottom: 2rem !important;
+  top: 6rem !important;
 }
 
 @media only screen and (max-height: 568px) and (max-width: 360px) {
