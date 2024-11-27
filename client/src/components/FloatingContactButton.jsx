@@ -2,6 +2,9 @@ import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
+import { IoClose } from "react-icons/io5";
+
+
 
 const FloatingContactButton = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +29,13 @@ const FloatingContactButton = () => {
             {/* Additional Contact Options */}
             {isOpen && (
                 <div className="absolute bottom-full mb-4 right-0 flex flex-col items-end space-y-3">
+                    <button
+                        onClick={() => setIsOpen(false)}
+                        className="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center"
+                        aria-label="Close Contact Options"
+                    >
+                        <IoClose size={18} />
+                    </button>
                     {/* Email Button */}
                     <button
                         onClick={handleEmail}

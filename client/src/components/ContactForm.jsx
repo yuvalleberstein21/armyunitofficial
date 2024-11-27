@@ -112,6 +112,7 @@ const ContactForm = () => {
                             className="w-11 h-11 bg-green-500 text-white p-2 rounded-full shadow-2xl hover:bg-green-600 flex items-center justify-center relative"
                             onClick={handleWhatsApp}
                             aria-label="WhatsApp"
+                            type="button"
                         >
                             <FaWhatsapp size={20} />
                         </button>
@@ -119,6 +120,7 @@ const ContactForm = () => {
                             className="w-11 h-11 px-1 bg-blue-500 text-white p-2 rounded-full shadow-2xl hover:bg-blue-600 flex items-center justify-center relative"
                             onClick={handleCall}
                             aria-label="Call"
+                            type="button"
                         >
                             <IoCallOutline size={20} />
                         </button>
