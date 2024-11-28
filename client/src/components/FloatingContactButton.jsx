@@ -8,7 +8,7 @@ import { IoClose } from "react-icons/io5";
 
 const FloatingContactButton = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const phoneNumber = '+972501234567';
+    const phoneNumber = '+972502299875';
     const email = 'pereh.org@gmail.com';
     const whatsappNum = '972502299875';
 

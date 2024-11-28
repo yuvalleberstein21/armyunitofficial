@@ -11,7 +11,7 @@ const ContactForm = () => {
     const lang = getLanguage();
     const isRtl = lang === 'he';
 
-    const phoneNumber = '+972501234567';
+    const phoneNumber = '+972502299875';
     const whatsappNum = '972502299875';
 
     const [formData, setFormData] = useState({
